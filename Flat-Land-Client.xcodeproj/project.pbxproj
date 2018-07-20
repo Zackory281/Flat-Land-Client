@@ -7,12 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1199E8E489D42D22695EF76E /* Pods_Flat_Land_Client.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B90728CF274E575DD93C3622 /* Pods_Flat_Land_Client.framework */; };
+		6AB3FB55D1C9855FD35C46F2 /* Pods_Flat_Land_ClientTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B08015E724C81F7811FFE67E /* Pods_Flat_Land_ClientTests.framework */; };
+		AE83FBDDE617EB17660315F1 /* Pods_Flat_Land_ClientUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 984F39AE5FC4C84A274F5C00 /* Pods_Flat_Land_ClientUITests.framework */; };
 		F234A62721010CEA00516846 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F234A62621010CEA00516846 /* AppDelegate.swift */; };
 		F234A62921010CEA00516846 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F234A62821010CEA00516846 /* ViewController.swift */; };
 		F234A62B21010CEB00516846 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F234A62A21010CEB00516846 /* Assets.xcassets */; };
 		F234A62E21010CEB00516846 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F234A62C21010CEB00516846 /* Main.storyboard */; };
 		F234A63A21010CEB00516846 /* Flat_Land_ClientTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F234A63921010CEB00516846 /* Flat_Land_ClientTests.swift */; };
 		F234A64521010CEB00516846 /* Flat_Land_ClientUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F234A64421010CEB00516846 /* Flat_Land_ClientUITests.swift */; };
+		F234A65621010D7200516846 /* Utils.c in Sources */ = {isa = PBXBuildFile; fileRef = F234A65521010D7200516846 /* Utils.c */; };
+		F234A6592101115900516846 /* ClientUDP.swift in Sources */ = {isa = PBXBuildFile; fileRef = F234A6582101115900516846 /* ClientUDP.swift */; };
+		F234A65F2101160500516846 /* InitView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F234A65E2101160500516846 /* InitView.swift */; };
+		F234A6622101170100516846 /* InitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F234A6612101170100516846 /* InitViewController.swift */; };
+		F234A669210117D200516846 /* ClientModelController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F234A668210117D200516846 /* ClientModelController.swift */; };
+		F2BDAA71210187CE00587E2C /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2BDAA70210187CE00587E2C /* MasterViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,6 +42,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0FE4A4DF17A4BC8B0355833E /* Pods-Flat-Land-ClientUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Flat-Land-ClientUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Flat-Land-ClientUITests/Pods-Flat-Land-ClientUITests.release.xcconfig"; sourceTree = "<group>"; };
+		37CF032CE1852852DABD71E3 /* Pods-Flat-Land-Client.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Flat-Land-Client.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Flat-Land-Client/Pods-Flat-Land-Client.debug.xcconfig"; sourceTree = "<group>"; };
+		452D963CF4709C921C01EFA0 /* Pods-Flat-Land-Client.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Flat-Land-Client.release.xcconfig"; path = "Pods/Target Support Files/Pods-Flat-Land-Client/Pods-Flat-Land-Client.release.xcconfig"; sourceTree = "<group>"; };
+		521E6226664F2488C1123A27 /* Pods-Flat-Land-ClientUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Flat-Land-ClientUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Flat-Land-ClientUITests/Pods-Flat-Land-ClientUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		63642DDA8B5E7E8A540B5BB8 /* Pods-Flat-Land-ClientTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Flat-Land-ClientTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Flat-Land-ClientTests/Pods-Flat-Land-ClientTests.debug.xcconfig"; sourceTree = "<group>"; };
+		762E5A03FAD7D97524EDD5A3 /* Pods-Flat-Land-ClientTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Flat-Land-ClientTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Flat-Land-ClientTests/Pods-Flat-Land-ClientTests.release.xcconfig"; sourceTree = "<group>"; };
+		984F39AE5FC4C84A274F5C00 /* Pods_Flat_Land_ClientUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Flat_Land_ClientUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B08015E724C81F7811FFE67E /* Pods_Flat_Land_ClientTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Flat_Land_ClientTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B90728CF274E575DD93C3622 /* Pods_Flat_Land_Client.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Flat_Land_Client.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F234A62321010CEA00516846 /* Flat-Land-Client.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Flat-Land-Client.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F234A62621010CEA00516846 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F234A62821010CEA00516846 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -46,6 +64,14 @@
 		F234A64021010CEB00516846 /* Flat-Land-ClientUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Flat-Land-ClientUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F234A64421010CEB00516846 /* Flat_Land_ClientUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Flat_Land_ClientUITests.swift; sourceTree = "<group>"; };
 		F234A64621010CEB00516846 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F234A65321010D7200516846 /* Utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Utils.h; sourceTree = "<group>"; };
+		F234A65421010D7200516846 /* bridge_header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bridge_header.h; sourceTree = "<group>"; };
+		F234A65521010D7200516846 /* Utils.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = Utils.c; sourceTree = "<group>"; };
+		F234A6582101115900516846 /* ClientUDP.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClientUDP.swift; sourceTree = "<group>"; };
+		F234A65E2101160500516846 /* InitView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitView.swift; sourceTree = "<group>"; };
+		F234A6612101170100516846 /* InitViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitViewController.swift; sourceTree = "<group>"; };
+		F234A668210117D200516846 /* ClientModelController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClientModelController.swift; sourceTree = "<group>"; };
+		F2BDAA70210187CE00587E2C /* MasterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +79,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1199E8E489D42D22695EF76E /* Pods_Flat_Land_Client.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -60,6 +87,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6AB3FB55D1C9855FD35C46F2 /* Pods_Flat_Land_ClientTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -67,12 +95,36 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AE83FBDDE617EB17660315F1 /* Pods_Flat_Land_ClientUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0A677D7DDC35B8773B616D61 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B90728CF274E575DD93C3622 /* Pods_Flat_Land_Client.framework */,
+				B08015E724C81F7811FFE67E /* Pods_Flat_Land_ClientTests.framework */,
+				984F39AE5FC4C84A274F5C00 /* Pods_Flat_Land_ClientUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C409C9391A8E806880C1D0F8 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				37CF032CE1852852DABD71E3 /* Pods-Flat-Land-Client.debug.xcconfig */,
+				452D963CF4709C921C01EFA0 /* Pods-Flat-Land-Client.release.xcconfig */,
+				63642DDA8B5E7E8A540B5BB8 /* Pods-Flat-Land-ClientTests.debug.xcconfig */,
+				762E5A03FAD7D97524EDD5A3 /* Pods-Flat-Land-ClientTests.release.xcconfig */,
+				521E6226664F2488C1123A27 /* Pods-Flat-Land-ClientUITests.debug.xcconfig */,
+				0FE4A4DF17A4BC8B0355833E /* Pods-Flat-Land-ClientUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		F234A61A21010CEA00516846 = {
 			isa = PBXGroup;
 			children = (
@@ -80,6 +132,8 @@
 				F234A63821010CEB00516846 /* Flat-Land-ClientTests */,
 				F234A64321010CEB00516846 /* Flat-Land-ClientUITests */,
 				F234A62421010CEA00516846 /* Products */,
+				C409C9391A8E806880C1D0F8 /* Pods */,
+				0A677D7DDC35B8773B616D61 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -96,6 +150,11 @@
 		F234A62521010CEA00516846 /* Flat-Land-Client */ = {
 			isa = PBXGroup;
 			children = (
+				F234A663210117A000516846 /* ModelControllers */,
+				F234A660210116AA00516846 /* ViewControllers */,
+				F234A65B210115B100516846 /* UI */,
+				F234A6572101113500516846 /* UDP Utils */,
+				F234A65221010D7200516846 /* C */,
 				F234A62621010CEA00516846 /* AppDelegate.swift */,
 				F234A62821010CEA00516846 /* ViewController.swift */,
 				F234A62A21010CEB00516846 /* Assets.xcassets */,
@@ -124,6 +183,49 @@
 			path = "Flat-Land-ClientUITests";
 			sourceTree = "<group>";
 		};
+		F234A65221010D7200516846 /* C */ = {
+			isa = PBXGroup;
+			children = (
+				F234A65321010D7200516846 /* Utils.h */,
+				F234A65421010D7200516846 /* bridge_header.h */,
+				F234A65521010D7200516846 /* Utils.c */,
+			);
+			path = C;
+			sourceTree = "<group>";
+		};
+		F234A6572101113500516846 /* UDP Utils */ = {
+			isa = PBXGroup;
+			children = (
+				F234A6582101115900516846 /* ClientUDP.swift */,
+			);
+			path = "UDP Utils";
+			sourceTree = "<group>";
+		};
+		F234A65B210115B100516846 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				F234A65E2101160500516846 /* InitView.swift */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		F234A660210116AA00516846 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				F234A6612101170100516846 /* InitViewController.swift */,
+				F2BDAA70210187CE00587E2C /* MasterViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		F234A663210117A000516846 /* ModelControllers */ = {
+			isa = PBXGroup;
+			children = (
+				F234A668210117D200516846 /* ClientModelController.swift */,
+			);
+			path = ModelControllers;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -131,9 +233,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F234A64921010CEB00516846 /* Build configuration list for PBXNativeTarget "Flat-Land-Client" */;
 			buildPhases = (
+				6539A79EEB507817D49E901B /* [CP] Check Pods Manifest.lock */,
 				F234A61F21010CEA00516846 /* Sources */,
 				F234A62021010CEA00516846 /* Frameworks */,
 				F234A62121010CEA00516846 /* Resources */,
+				6F308693216E46072CAEE2F3 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -148,6 +252,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F234A64C21010CEB00516846 /* Build configuration list for PBXNativeTarget "Flat-Land-ClientTests" */;
 			buildPhases = (
+				F600CB9C276075A52ADAEDCE /* [CP] Check Pods Manifest.lock */,
 				F234A63121010CEB00516846 /* Sources */,
 				F234A63221010CEB00516846 /* Frameworks */,
 				F234A63321010CEB00516846 /* Resources */,
@@ -166,6 +271,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F234A64F21010CEB00516846 /* Build configuration list for PBXNativeTarget "Flat-Land-ClientUITests" */;
 			buildPhases = (
+				A014138501FFE32BFCC456B0 /* [CP] Check Pods Manifest.lock */,
 				F234A63C21010CEB00516846 /* Sources */,
 				F234A63D21010CEB00516846 /* Frameworks */,
 				F234A63E21010CEB00516846 /* Resources */,
@@ -249,12 +355,93 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		6539A79EEB507817D49E901B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Flat-Land-Client-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6F308693216E46072CAEE2F3 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Flat-Land-Client/Pods-Flat-Land-Client-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/BlueSocket/Socket.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Socket.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Flat-Land-Client/Pods-Flat-Land-Client-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A014138501FFE32BFCC456B0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Flat-Land-ClientUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F600CB9C276075A52ADAEDCE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Flat-Land-ClientTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		F234A61F21010CEA00516846 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F2BDAA71210187CE00587E2C /* MasterViewController.swift in Sources */,
+				F234A65621010D7200516846 /* Utils.c in Sources */,
+				F234A65F2101160500516846 /* InitView.swift in Sources */,
+				F234A6622101170100516846 /* InitViewController.swift in Sources */,
 				F234A62921010CEA00516846 /* ViewController.swift in Sources */,
+				F234A669210117D200516846 /* ClientModelController.swift in Sources */,
+				F234A6592101115900516846 /* ClientUDP.swift in Sources */,
 				F234A62721010CEA00516846 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -419,6 +606,7 @@
 		};
 		F234A64A21010CEB00516846 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 37CF032CE1852852DABD71E3 /* Pods-Flat-Land-Client.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = "Flat-Land-Client/Flat_Land_Client.entitlements";
@@ -432,12 +620,14 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "dsf.Flat-Land-Client";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Flat-Land-Client/C/bridge_header.h";
 				SWIFT_VERSION = 4.2;
 			};
 			name = Debug;
 		};
 		F234A64B21010CEB00516846 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 452D963CF4709C921C01EFA0 /* Pods-Flat-Land-Client.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = "Flat-Land-Client/Flat_Land_Client.entitlements";
@@ -451,12 +641,14 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "dsf.Flat-Land-Client";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Flat-Land-Client/C/bridge_header.h";
 				SWIFT_VERSION = 4.2;
 			};
 			name = Release;
 		};
 		F234A64D21010CEB00516846 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 63642DDA8B5E7E8A540B5BB8 /* Pods-Flat-Land-ClientTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -478,6 +670,7 @@
 		};
 		F234A64E21010CEB00516846 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 762E5A03FAD7D97524EDD5A3 /* Pods-Flat-Land-ClientTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -499,6 +692,7 @@
 		};
 		F234A65021010CEB00516846 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 521E6226664F2488C1123A27 /* Pods-Flat-Land-ClientUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -519,6 +713,7 @@
 		};
 		F234A65121010CEB00516846 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0FE4A4DF17A4BC8B0355833E /* Pods-Flat-Land-ClientUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
