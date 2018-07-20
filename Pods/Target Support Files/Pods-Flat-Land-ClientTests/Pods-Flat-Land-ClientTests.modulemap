@@ -1,0 +1,6 @@
+framework module Pods_Flat_Land_ClientTests {
+  umbrella header "Pods-Flat-Land-ClientTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

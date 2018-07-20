@@ -1,38 +1,44 @@
 // !$*UTF8*$!
 {
-	archiveVersion = 1;
-	classes = {
-	};
-	objectVersion = 50;
-	objects = {
+    archiveVersion = 1;
+    classes = {
+    };
+    objectVersion = 50;
+    objects = {
 
 /* Begin PBXBuildFile section */
 		39A5937D705442E065AEAD08 /* Pods_Flat_Land_ClientUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 10169AB48ED5F93EB20E172D /* Pods_Flat_Land_ClientUITests.framework */; };
 		43E5C4127EF0CC37C6D7F8FD /* Pods_Flat_Land_Client.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2577FD984BA952FCF2254211 /* Pods_Flat_Land_Client.framework */; };
 		94D445B2D33555B0EB1768DF /* Pods_Flat_Land_ClientTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DAA0EB16CEEF97D8E56F1AE5 /* Pods_Flat_Land_ClientTests.framework */; };
-		F234A62721010CEA00516846 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F234A62621010CEA00516846 /* AppDelegate.swift */; };
-		F234A62921010CEA00516846 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F234A62821010CEA00516846 /* ViewController.swift */; };
-		F234A62B21010CEB00516846 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F234A62A21010CEB00516846 /* Assets.xcassets */; };
-		F234A62E21010CEB00516846 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F234A62C21010CEB00516846 /* Main.storyboard */; };
-		F234A63A21010CEB00516846 /* Flat_Land_ClientTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F234A63921010CEB00516846 /* Flat_Land_ClientTests.swift */; };
-		F234A64521010CEB00516846 /* Flat_Land_ClientUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F234A64421010CEB00516846 /* Flat_Land_ClientUITests.swift */; };
+        F234A62721010CEA00516846 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F234A62621010CEA00516846 /* AppDelegate.swift */; };
+        F234A62921010CEA00516846 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F234A62821010CEA00516846 /* ViewController.swift */; };
+        F234A62B21010CEB00516846 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F234A62A21010CEB00516846 /* Assets.xcassets */; };
+        F234A62E21010CEB00516846 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F234A62C21010CEB00516846 /* Main.storyboard */; };
+        F234A63A21010CEB00516846 /* Flat_Land_ClientTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F234A63921010CEB00516846 /* Flat_Land_ClientTests.swift */; };
+        F234A64521010CEB00516846 /* Flat_Land_ClientUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F234A64421010CEB00516846 /* Flat_Land_ClientUITests.swift */; };
+        F234A65621010D7200516846 /* Utils.c in Sources */ = {isa = PBXBuildFile; fileRef = F234A65521010D7200516846 /* Utils.c */; };
+        F234A6592101115900516846 /* ClientUDP.swift in Sources */ = {isa = PBXBuildFile; fileRef = F234A6582101115900516846 /* ClientUDP.swift */; };
+        F234A65F2101160500516846 /* InitView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F234A65E2101160500516846 /* InitView.swift */; };
+        F234A6622101170100516846 /* InitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F234A6612101170100516846 /* InitViewController.swift */; };
+        F234A669210117D200516846 /* ClientModelController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F234A668210117D200516846 /* ClientModelController.swift */; };
+        F2BDAA71210187CE00587E2C /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2BDAA70210187CE00587E2C /* MasterViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		F234A63621010CEB00516846 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = F234A61B21010CEA00516846 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = F234A62221010CEA00516846;
-			remoteInfo = "Flat-Land-Client";
-		};
-		F234A64121010CEB00516846 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = F234A61B21010CEA00516846 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = F234A62221010CEA00516846;
-			remoteInfo = "Flat-Land-Client";
-		};
+        F234A63621010CEB00516846 /* PBXContainerItemProxy */ = {
+            isa = PBXContainerItemProxy;
+            containerPortal = F234A61B21010CEA00516846 /* Project object */;
+            proxyType = 1;
+            remoteGlobalIDString = F234A62221010CEA00516846;
+            remoteInfo = "Flat-Land-Client";
+        };
+        F234A64121010CEB00516846 /* PBXContainerItemProxy */ = {
+            isa = PBXContainerItemProxy;
+            containerPortal = F234A61B21010CEA00516846 /* Project object */;
+            proxyType = 1;
+            remoteGlobalIDString = F234A62221010CEA00516846;
+            remoteInfo = "Flat-Land-Client";
+        };
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
@@ -45,46 +51,54 @@
 		8DC2C58E0FD6A670949D229D /* Pods-Flat-Land-ClientUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Flat-Land-ClientUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Flat-Land-ClientUITests/Pods-Flat-Land-ClientUITests.release.xcconfig"; sourceTree = "<group>"; };
 		D4F5F74899F32CA9D37A0693 /* Pods-Flat-Land-Client.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Flat-Land-Client.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Flat-Land-Client/Pods-Flat-Land-Client.debug.xcconfig"; sourceTree = "<group>"; };
 		DAA0EB16CEEF97D8E56F1AE5 /* Pods_Flat_Land_ClientTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Flat_Land_ClientTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		F234A62321010CEA00516846 /* Flat-Land-Client.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Flat-Land-Client.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		F234A62621010CEA00516846 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		F234A62821010CEA00516846 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		F234A62A21010CEB00516846 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		F234A62D21010CEB00516846 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		F234A62F21010CEB00516846 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F234A63021010CEB00516846 /* Flat_Land_Client.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Flat_Land_Client.entitlements; sourceTree = "<group>"; };
-		F234A63521010CEB00516846 /* Flat-Land-ClientTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Flat-Land-ClientTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		F234A63921010CEB00516846 /* Flat_Land_ClientTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Flat_Land_ClientTests.swift; sourceTree = "<group>"; };
-		F234A63B21010CEB00516846 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F234A64021010CEB00516846 /* Flat-Land-ClientUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Flat-Land-ClientUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		F234A64421010CEB00516846 /* Flat_Land_ClientUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Flat_Land_ClientUITests.swift; sourceTree = "<group>"; };
-		F234A64621010CEB00516846 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+        F234A62321010CEA00516846 /* Flat-Land-Client.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Flat-Land-Client.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+        F234A62621010CEA00516846 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+        F234A62821010CEA00516846 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+        F234A62A21010CEB00516846 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+        F234A62D21010CEB00516846 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+        F234A62F21010CEB00516846 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+        F234A63021010CEB00516846 /* Flat_Land_Client.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Flat_Land_Client.entitlements; sourceTree = "<group>"; };
+        F234A63521010CEB00516846 /* Flat-Land-ClientTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Flat-Land-ClientTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+        F234A63921010CEB00516846 /* Flat_Land_ClientTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Flat_Land_ClientTests.swift; sourceTree = "<group>"; };
+        F234A63B21010CEB00516846 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+        F234A64021010CEB00516846 /* Flat-Land-ClientUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Flat-Land-ClientUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+        F234A64421010CEB00516846 /* Flat_Land_ClientUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Flat_Land_ClientUITests.swift; sourceTree = "<group>"; };
+        F234A64621010CEB00516846 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+        F234A65321010D7200516846 /* Utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Utils.h; sourceTree = "<group>"; };
+        F234A65421010D7200516846 /* bridge_header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bridge_header.h; sourceTree = "<group>"; };
+        F234A65521010D7200516846 /* Utils.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = Utils.c; sourceTree = "<group>"; };
+        F234A6582101115900516846 /* ClientUDP.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClientUDP.swift; sourceTree = "<group>"; };
+        F234A65E2101160500516846 /* InitView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitView.swift; sourceTree = "<group>"; };
+        F234A6612101170100516846 /* InitViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitViewController.swift; sourceTree = "<group>"; };
+        F234A668210117D200516846 /* ClientModelController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClientModelController.swift; sourceTree = "<group>"; };
+        F2BDAA70210187CE00587E2C /* MasterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		F234A62021010CEA00516846 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
+        F234A62021010CEA00516846 /* Frameworks */ = {
+            isa = PBXFrameworksBuildPhase;
+            buildActionMask = 2147483647;
+            files = (
 				43E5C4127EF0CC37C6D7F8FD /* Pods_Flat_Land_Client.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		F234A63221010CEB00516846 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
+            );
+            runOnlyForDeploymentPostprocessing = 0;
+        };
+        F234A63221010CEB00516846 /* Frameworks */ = {
+            isa = PBXFrameworksBuildPhase;
+            buildActionMask = 2147483647;
+            files = (
 				94D445B2D33555B0EB1768DF /* Pods_Flat_Land_ClientTests.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		F234A63D21010CEB00516846 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
+            );
+            runOnlyForDeploymentPostprocessing = 0;
+        };
+        F234A63D21010CEB00516846 /* Frameworks */ = {
+            isa = PBXFrameworksBuildPhase;
+            buildActionMask = 2147483647;
+            files = (
 				39A5937D705442E065AEAD08 /* Pods_Flat_Land_ClientUITests.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
+            );
+            runOnlyForDeploymentPostprocessing = 0;
+        };
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -107,601 +121,669 @@
 				2577FD984BA952FCF2254211 /* Pods_Flat_Land_Client.framework */,
 				DAA0EB16CEEF97D8E56F1AE5 /* Pods_Flat_Land_ClientTests.framework */,
 				10169AB48ED5F93EB20E172D /* Pods_Flat_Land_ClientUITests.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		F234A61A21010CEA00516846 = {
-			isa = PBXGroup;
-			children = (
-				F234A62521010CEA00516846 /* Flat-Land-Client */,
-				F234A63821010CEB00516846 /* Flat-Land-ClientTests */,
-				F234A64321010CEB00516846 /* Flat-Land-ClientUITests */,
-				F234A62421010CEA00516846 /* Products */,
+            );
+            name = Frameworks;
+            sourceTree = "<group>";
+        };
+        C409C9391A8E806880C1D0F8 /* Pods */ = {
+            isa = PBXGroup;
+            children = (
+                37CF032CE1852852DABD71E3 /* Pods-Flat-Land-Client.debug.xcconfig */,
+                452D963CF4709C921C01EFA0 /* Pods-Flat-Land-Client.release.xcconfig */,
+                63642DDA8B5E7E8A540B5BB8 /* Pods-Flat-Land-ClientTests.debug.xcconfig */,
+                762E5A03FAD7D97524EDD5A3 /* Pods-Flat-Land-ClientTests.release.xcconfig */,
+                521E6226664F2488C1123A27 /* Pods-Flat-Land-ClientUITests.debug.xcconfig */,
+                0FE4A4DF17A4BC8B0355833E /* Pods-Flat-Land-ClientUITests.release.xcconfig */,
+            );
+            name = Pods;
+            sourceTree = "<group>";
+        };
+        F234A61A21010CEA00516846 = {
+            isa = PBXGroup;
+            children = (
+                F234A62521010CEA00516846 /* Flat-Land-Client */,
+                F234A63821010CEB00516846 /* Flat-Land-ClientTests */,
+                F234A64321010CEB00516846 /* Flat-Land-ClientUITests */,
+                F234A62421010CEA00516846 /* Products */,
 				94CD5CA48E6A89D3DC5DE06D /* Pods */,
 				CBBD4A98412C3095AB59EB57 /* Frameworks */,
-			);
-			sourceTree = "<group>";
-		};
-		F234A62421010CEA00516846 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				F234A62321010CEA00516846 /* Flat-Land-Client.app */,
-				F234A63521010CEB00516846 /* Flat-Land-ClientTests.xctest */,
-				F234A64021010CEB00516846 /* Flat-Land-ClientUITests.xctest */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		F234A62521010CEA00516846 /* Flat-Land-Client */ = {
-			isa = PBXGroup;
-			children = (
-				F234A62621010CEA00516846 /* AppDelegate.swift */,
-				F234A62821010CEA00516846 /* ViewController.swift */,
-				F234A62A21010CEB00516846 /* Assets.xcassets */,
-				F234A62C21010CEB00516846 /* Main.storyboard */,
-				F234A62F21010CEB00516846 /* Info.plist */,
-				F234A63021010CEB00516846 /* Flat_Land_Client.entitlements */,
-			);
-			path = "Flat-Land-Client";
-			sourceTree = "<group>";
-		};
-		F234A63821010CEB00516846 /* Flat-Land-ClientTests */ = {
-			isa = PBXGroup;
-			children = (
-				F234A63921010CEB00516846 /* Flat_Land_ClientTests.swift */,
-				F234A63B21010CEB00516846 /* Info.plist */,
-			);
-			path = "Flat-Land-ClientTests";
-			sourceTree = "<group>";
-		};
-		F234A64321010CEB00516846 /* Flat-Land-ClientUITests */ = {
-			isa = PBXGroup;
-			children = (
-				F234A64421010CEB00516846 /* Flat_Land_ClientUITests.swift */,
-				F234A64621010CEB00516846 /* Info.plist */,
-			);
-			path = "Flat-Land-ClientUITests";
-			sourceTree = "<group>";
-		};
+            );
+            sourceTree = "<group>";
+        };
+        F234A62421010CEA00516846 /* Products */ = {
+            isa = PBXGroup;
+            children = (
+                F234A62321010CEA00516846 /* Flat-Land-Client.app */,
+                F234A63521010CEB00516846 /* Flat-Land-ClientTests.xctest */,
+                F234A64021010CEB00516846 /* Flat-Land-ClientUITests.xctest */,
+            );
+            name = Products;
+            sourceTree = "<group>";
+        };
+        F234A62521010CEA00516846 /* Flat-Land-Client */ = {
+            isa = PBXGroup;
+            children = (
+                F234A663210117A000516846 /* ModelControllers */,
+                F234A660210116AA00516846 /* ViewControllers */,
+                F234A65B210115B100516846 /* UI */,
+                F234A6572101113500516846 /* UDP Utils */,
+                F234A65221010D7200516846 /* C */,
+                F234A62621010CEA00516846 /* AppDelegate.swift */,
+                F234A62821010CEA00516846 /* ViewController.swift */,
+                F234A62A21010CEB00516846 /* Assets.xcassets */,
+                F234A62C21010CEB00516846 /* Main.storyboard */,
+                F234A62F21010CEB00516846 /* Info.plist */,
+                F234A63021010CEB00516846 /* Flat_Land_Client.entitlements */,
+            );
+            path = "Flat-Land-Client";
+            sourceTree = "<group>";
+        };
+        F234A63821010CEB00516846 /* Flat-Land-ClientTests */ = {
+            isa = PBXGroup;
+            children = (
+                F234A63921010CEB00516846 /* Flat_Land_ClientTests.swift */,
+                F234A63B21010CEB00516846 /* Info.plist */,
+            );
+            path = "Flat-Land-ClientTests";
+            sourceTree = "<group>";
+        };
+        F234A64321010CEB00516846 /* Flat-Land-ClientUITests */ = {
+            isa = PBXGroup;
+            children = (
+                F234A64421010CEB00516846 /* Flat_Land_ClientUITests.swift */,
+                F234A64621010CEB00516846 /* Info.plist */,
+            );
+            path = "Flat-Land-ClientUITests";
+            sourceTree = "<group>";
+        };
+        F234A65221010D7200516846 /* C */ = {
+            isa = PBXGroup;
+            children = (
+                F234A65321010D7200516846 /* Utils.h */,
+                F234A65421010D7200516846 /* bridge_header.h */,
+                F234A65521010D7200516846 /* Utils.c */,
+            );
+            path = C;
+            sourceTree = "<group>";
+        };
+        F234A6572101113500516846 /* UDP Utils */ = {
+            isa = PBXGroup;
+            children = (
+                F234A6582101115900516846 /* ClientUDP.swift */,
+            );
+            path = "UDP Utils";
+            sourceTree = "<group>";
+        };
+        F234A65B210115B100516846 /* UI */ = {
+            isa = PBXGroup;
+            children = (
+                F234A65E2101160500516846 /* InitView.swift */,
+            );
+            path = UI;
+            sourceTree = "<group>";
+        };
+        F234A660210116AA00516846 /* ViewControllers */ = {
+            isa = PBXGroup;
+            children = (
+                F234A6612101170100516846 /* InitViewController.swift */,
+                F2BDAA70210187CE00587E2C /* MasterViewController.swift */,
+            );
+            path = ViewControllers;
+            sourceTree = "<group>";
+        };
+        F234A663210117A000516846 /* ModelControllers */ = {
+            isa = PBXGroup;
+            children = (
+                F234A668210117D200516846 /* ClientModelController.swift */,
+            );
+            path = ModelControllers;
+            sourceTree = "<group>";
+        };
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		F234A62221010CEA00516846 /* Flat-Land-Client */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = F234A64921010CEB00516846 /* Build configuration list for PBXNativeTarget "Flat-Land-Client" */;
-			buildPhases = (
+        F234A62221010CEA00516846 /* Flat-Land-Client */ = {
+            isa = PBXNativeTarget;
+            buildConfigurationList = F234A64921010CEB00516846 /* Build configuration list for PBXNativeTarget "Flat-Land-Client" */;
+            buildPhases = (
 				62A98DF172E3DC684F1AA3B3 /* [CP] Check Pods Manifest.lock */,
-				F234A61F21010CEA00516846 /* Sources */,
-				F234A62021010CEA00516846 /* Frameworks */,
-				F234A62121010CEA00516846 /* Resources */,
+                F234A61F21010CEA00516846 /* Sources */,
+                F234A62021010CEA00516846 /* Frameworks */,
+                F234A62121010CEA00516846 /* Resources */,
 				511CD126FE1C17E3F937A947 /* [CP] Embed Pods Frameworks */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = "Flat-Land-Client";
-			productName = "Flat-Land-Client";
-			productReference = F234A62321010CEA00516846 /* Flat-Land-Client.app */;
-			productType = "com.apple.product-type.application";
-		};
-		F234A63421010CEB00516846 /* Flat-Land-ClientTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = F234A64C21010CEB00516846 /* Build configuration list for PBXNativeTarget "Flat-Land-ClientTests" */;
-			buildPhases = (
+            );
+            buildRules = (
+            );
+            dependencies = (
+            );
+            name = "Flat-Land-Client";
+            productName = "Flat-Land-Client";
+            productReference = F234A62321010CEA00516846 /* Flat-Land-Client.app */;
+            productType = "com.apple.product-type.application";
+        };
+        F234A63421010CEB00516846 /* Flat-Land-ClientTests */ = {
+            isa = PBXNativeTarget;
+            buildConfigurationList = F234A64C21010CEB00516846 /* Build configuration list for PBXNativeTarget "Flat-Land-ClientTests" */;
+            buildPhases = (
 				AA8ADDF19D8E8F7DFBAA854D /* [CP] Check Pods Manifest.lock */,
-				F234A63121010CEB00516846 /* Sources */,
-				F234A63221010CEB00516846 /* Frameworks */,
-				F234A63321010CEB00516846 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				F234A63721010CEB00516846 /* PBXTargetDependency */,
-			);
-			name = "Flat-Land-ClientTests";
-			productName = "Flat-Land-ClientTests";
-			productReference = F234A63521010CEB00516846 /* Flat-Land-ClientTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		F234A63F21010CEB00516846 /* Flat-Land-ClientUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = F234A64F21010CEB00516846 /* Build configuration list for PBXNativeTarget "Flat-Land-ClientUITests" */;
-			buildPhases = (
+                F234A63121010CEB00516846 /* Sources */,
+                F234A63221010CEB00516846 /* Frameworks */,
+                F234A63321010CEB00516846 /* Resources */,
+            );
+            buildRules = (
+            );
+            dependencies = (
+                F234A63721010CEB00516846 /* PBXTargetDependency */,
+            );
+            name = "Flat-Land-ClientTests";
+            productName = "Flat-Land-ClientTests";
+            productReference = F234A63521010CEB00516846 /* Flat-Land-ClientTests.xctest */;
+            productType = "com.apple.product-type.bundle.unit-test";
+        };
+        F234A63F21010CEB00516846 /* Flat-Land-ClientUITests */ = {
+            isa = PBXNativeTarget;
+            buildConfigurationList = F234A64F21010CEB00516846 /* Build configuration list for PBXNativeTarget "Flat-Land-ClientUITests" */;
+            buildPhases = (
 				18739F1A00D05471D09B4848 /* [CP] Check Pods Manifest.lock */,
-				F234A63C21010CEB00516846 /* Sources */,
-				F234A63D21010CEB00516846 /* Frameworks */,
-				F234A63E21010CEB00516846 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				F234A64221010CEB00516846 /* PBXTargetDependency */,
-			);
-			name = "Flat-Land-ClientUITests";
-			productName = "Flat-Land-ClientUITests";
-			productReference = F234A64021010CEB00516846 /* Flat-Land-ClientUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
+                F234A63C21010CEB00516846 /* Sources */,
+                F234A63D21010CEB00516846 /* Frameworks */,
+                F234A63E21010CEB00516846 /* Resources */,
+            );
+            buildRules = (
+            );
+            dependencies = (
+                F234A64221010CEB00516846 /* PBXTargetDependency */,
+            );
+            name = "Flat-Land-ClientUITests";
+            productName = "Flat-Land-ClientUITests";
+            productReference = F234A64021010CEB00516846 /* Flat-Land-ClientUITests.xctest */;
+            productType = "com.apple.product-type.bundle.ui-testing";
+        };
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		F234A61B21010CEA00516846 /* Project object */ = {
-			isa = PBXProject;
-			attributes = {
-				LastSwiftUpdateCheck = 1000;
-				LastUpgradeCheck = 1000;
-				ORGANIZATIONNAME = "Zackori Cui";
-				TargetAttributes = {
-					F234A62221010CEA00516846 = {
-						CreatedOnToolsVersion = 10.0;
-					};
-					F234A63421010CEB00516846 = {
-						CreatedOnToolsVersion = 10.0;
-						TestTargetID = F234A62221010CEA00516846;
-					};
-					F234A63F21010CEB00516846 = {
-						CreatedOnToolsVersion = 10.0;
-						TestTargetID = F234A62221010CEA00516846;
-					};
-				};
-			};
-			buildConfigurationList = F234A61E21010CEA00516846 /* Build configuration list for PBXProject "Flat-Land-Client" */;
-			compatibilityVersion = "Xcode 9.3";
-			developmentRegion = en;
-			hasScannedForEncodings = 0;
-			knownRegions = (
-				en,
-				Base,
-			);
-			mainGroup = F234A61A21010CEA00516846;
-			productRefGroup = F234A62421010CEA00516846 /* Products */;
-			projectDirPath = "";
-			projectRoot = "";
-			targets = (
-				F234A62221010CEA00516846 /* Flat-Land-Client */,
-				F234A63421010CEB00516846 /* Flat-Land-ClientTests */,
-				F234A63F21010CEB00516846 /* Flat-Land-ClientUITests */,
-			);
-		};
+        F234A61B21010CEA00516846 /* Project object */ = {
+            isa = PBXProject;
+            attributes = {
+                LastSwiftUpdateCheck = 1000;
+                LastUpgradeCheck = 1000;
+                ORGANIZATIONNAME = "Zackori Cui";
+                TargetAttributes = {
+                    F234A62221010CEA00516846 = {
+                        CreatedOnToolsVersion = 10.0;
+                    };
+                    F234A63421010CEB00516846 = {
+                        CreatedOnToolsVersion = 10.0;
+                        TestTargetID = F234A62221010CEA00516846;
+                    };
+                    F234A63F21010CEB00516846 = {
+                        CreatedOnToolsVersion = 10.0;
+                        TestTargetID = F234A62221010CEA00516846;
+                    };
+                };
+            };
+            buildConfigurationList = F234A61E21010CEA00516846 /* Build configuration list for PBXProject "Flat-Land-Client" */;
+            compatibilityVersion = "Xcode 9.3";
+            developmentRegion = en;
+            hasScannedForEncodings = 0;
+            knownRegions = (
+                en,
+                Base,
+            );
+            mainGroup = F234A61A21010CEA00516846;
+            productRefGroup = F234A62421010CEA00516846 /* Products */;
+            projectDirPath = "";
+            projectRoot = "";
+            targets = (
+                F234A62221010CEA00516846 /* Flat-Land-Client */,
+                F234A63421010CEB00516846 /* Flat-Land-ClientTests */,
+                F234A63F21010CEB00516846 /* Flat-Land-ClientUITests */,
+            );
+        };
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		F234A62121010CEA00516846 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				F234A62B21010CEB00516846 /* Assets.xcassets in Resources */,
-				F234A62E21010CEB00516846 /* Main.storyboard in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		F234A63321010CEB00516846 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		F234A63E21010CEB00516846 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
+        F234A62121010CEA00516846 /* Resources */ = {
+            isa = PBXResourcesBuildPhase;
+            buildActionMask = 2147483647;
+            files = (
+                F234A62B21010CEB00516846 /* Assets.xcassets in Resources */,
+                F234A62E21010CEB00516846 /* Main.storyboard in Resources */,
+            );
+            runOnlyForDeploymentPostprocessing = 0;
+        };
+        F234A63321010CEB00516846 /* Resources */ = {
+            isa = PBXResourcesBuildPhase;
+            buildActionMask = 2147483647;
+            files = (
+            );
+            runOnlyForDeploymentPostprocessing = 0;
+        };
+        F234A63E21010CEB00516846 /* Resources */ = {
+            isa = PBXResourcesBuildPhase;
+            buildActionMask = 2147483647;
+            files = (
+            );
+            runOnlyForDeploymentPostprocessing = 0;
+        };
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
 		18739F1A00D05471D09B4848 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
+            isa = PBXShellScriptBuildPhase;
+            buildActionMask = 2147483647;
+            files = (
+            );
+            inputPaths = (
+                "${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+                "${PODS_ROOT}/Manifest.lock",
+            );
+            name = "[CP] Check Pods Manifest.lock";
+            outputPaths = (
 				"$(DERIVED_FILE_DIR)/Pods-Flat-Land-ClientUITests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
+            );
+            runOnlyForDeploymentPostprocessing = 0;
+            shellPath = /bin/sh;
+            shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+            showEnvVarsInLog = 0;
+        };
 		511CD126FE1C17E3F937A947 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-Flat-Land-Client/Pods-Flat-Land-Client-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/BlueSocket/Socket.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Socket.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Flat-Land-Client/Pods-Flat-Land-Client-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
+            isa = PBXShellScriptBuildPhase;
+            buildActionMask = 2147483647;
+            files = (
+            );
+            inputPaths = (
+                "${SRCROOT}/Pods/Target Support Files/Pods-Flat-Land-Client/Pods-Flat-Land-Client-frameworks.sh",
+                "${BUILT_PRODUCTS_DIR}/BlueSocket/Socket.framework",
+            );
+            name = "[CP] Embed Pods Frameworks";
+            outputPaths = (
+                "${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Socket.framework",
+            );
+            runOnlyForDeploymentPostprocessing = 0;
+            shellPath = /bin/sh;
+            shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Flat-Land-Client/Pods-Flat-Land-Client-frameworks.sh\"\n";
+            showEnvVarsInLog = 0;
+        };
 		62A98DF172E3DC684F1AA3B3 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
+            isa = PBXShellScriptBuildPhase;
+            buildActionMask = 2147483647;
+            files = (
+            );
+            inputPaths = (
+                "${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+                "${PODS_ROOT}/Manifest.lock",
+            );
+            name = "[CP] Check Pods Manifest.lock";
+            outputPaths = (
 				"$(DERIVED_FILE_DIR)/Pods-Flat-Land-Client-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
+            );
+            runOnlyForDeploymentPostprocessing = 0;
+            shellPath = /bin/sh;
+            shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+            showEnvVarsInLog = 0;
+        };
 		AA8ADDF19D8E8F7DFBAA854D /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-Flat-Land-ClientTests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
+            isa = PBXShellScriptBuildPhase;
+            buildActionMask = 2147483647;
+            files = (
+            );
+            inputPaths = (
+                "${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+                "${PODS_ROOT}/Manifest.lock",
+            );
+            name = "[CP] Check Pods Manifest.lock";
+            outputPaths = (
+                "$(DERIVED_FILE_DIR)/Pods-Flat-Land-ClientTests-checkManifestLockResult.txt",
+            );
+            runOnlyForDeploymentPostprocessing = 0;
+            shellPath = /bin/sh;
+            shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+            showEnvVarsInLog = 0;
+        };
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		F234A61F21010CEA00516846 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				F234A62921010CEA00516846 /* ViewController.swift in Sources */,
-				F234A62721010CEA00516846 /* AppDelegate.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		F234A63121010CEB00516846 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				F234A63A21010CEB00516846 /* Flat_Land_ClientTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		F234A63C21010CEB00516846 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				F234A64521010CEB00516846 /* Flat_Land_ClientUITests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
+        F234A61F21010CEA00516846 /* Sources */ = {
+            isa = PBXSourcesBuildPhase;
+            buildActionMask = 2147483647;
+            files = (
+                F2BDAA71210187CE00587E2C /* MasterViewController.swift in Sources */,
+                F234A65621010D7200516846 /* Utils.c in Sources */,
+                F234A65F2101160500516846 /* InitView.swift in Sources */,
+                F234A6622101170100516846 /* InitViewController.swift in Sources */,
+                F234A62921010CEA00516846 /* ViewController.swift in Sources */,
+                F234A669210117D200516846 /* ClientModelController.swift in Sources */,
+                F234A6592101115900516846 /* ClientUDP.swift in Sources */,
+                F234A62721010CEA00516846 /* AppDelegate.swift in Sources */,
+            );
+            runOnlyForDeploymentPostprocessing = 0;
+        };
+        F234A63121010CEB00516846 /* Sources */ = {
+            isa = PBXSourcesBuildPhase;
+            buildActionMask = 2147483647;
+            files = (
+                F234A63A21010CEB00516846 /* Flat_Land_ClientTests.swift in Sources */,
+            );
+            runOnlyForDeploymentPostprocessing = 0;
+        };
+        F234A63C21010CEB00516846 /* Sources */ = {
+            isa = PBXSourcesBuildPhase;
+            buildActionMask = 2147483647;
+            files = (
+                F234A64521010CEB00516846 /* Flat_Land_ClientUITests.swift in Sources */,
+            );
+            runOnlyForDeploymentPostprocessing = 0;
+        };
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		F234A63721010CEB00516846 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = F234A62221010CEA00516846 /* Flat-Land-Client */;
-			targetProxy = F234A63621010CEB00516846 /* PBXContainerItemProxy */;
-		};
-		F234A64221010CEB00516846 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = F234A62221010CEA00516846 /* Flat-Land-Client */;
-			targetProxy = F234A64121010CEB00516846 /* PBXContainerItemProxy */;
-		};
+        F234A63721010CEB00516846 /* PBXTargetDependency */ = {
+            isa = PBXTargetDependency;
+            target = F234A62221010CEA00516846 /* Flat-Land-Client */;
+            targetProxy = F234A63621010CEB00516846 /* PBXContainerItemProxy */;
+        };
+        F234A64221010CEB00516846 /* PBXTargetDependency */ = {
+            isa = PBXTargetDependency;
+            target = F234A62221010CEA00516846 /* Flat-Land-Client */;
+            targetProxy = F234A64121010CEB00516846 /* PBXContainerItemProxy */;
+        };
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		F234A62C21010CEB00516846 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				F234A62D21010CEB00516846 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
+        F234A62C21010CEB00516846 /* Main.storyboard */ = {
+            isa = PBXVariantGroup;
+            children = (
+                F234A62D21010CEB00516846 /* Base */,
+            );
+            name = Main.storyboard;
+            sourceTree = "<group>";
+        };
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		F234A64721010CEB00516846 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_ENABLE_OBJC_WEAK = YES;
-				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_COMMA = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INFINITE_RECURSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
-				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
-				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
-				CLANG_WARN_STRICT_PROTOTYPES = YES;
-				CLANG_WARN_SUSPICIOUS_MOVE = YES;
-				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "Mac Developer";
-				COPY_PHASE_STRIP = NO;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				ENABLE_TESTABILITY = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu11;
-				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.13;
-				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
-				MTL_FAST_MATH = YES;
-				ONLY_ACTIVE_ARCH = YES;
-				SDKROOT = macosx;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-			};
-			name = Debug;
-		};
-		F234A64821010CEB00516846 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_ENABLE_OBJC_WEAK = YES;
-				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_COMMA = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INFINITE_RECURSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
-				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
-				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
-				CLANG_WARN_STRICT_PROTOTYPES = YES;
-				CLANG_WARN_SUSPICIOUS_MOVE = YES;
-				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "Mac Developer";
-				COPY_PHASE_STRIP = NO;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				ENABLE_NS_ASSERTIONS = NO;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu11;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.13;
-				MTL_ENABLE_DEBUG_INFO = NO;
-				MTL_FAST_MATH = YES;
-				SDKROOT = macosx;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
-			};
-			name = Release;
-		};
-		F234A64A21010CEB00516846 /* Debug */ = {
-			isa = XCBuildConfiguration;
+        F234A64721010CEB00516846 /* Debug */ = {
+            isa = XCBuildConfiguration;
+            buildSettings = {
+                ALWAYS_SEARCH_USER_PATHS = NO;
+                CLANG_ANALYZER_NONNULL = YES;
+                CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+                CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+                CLANG_CXX_LIBRARY = "libc++";
+                CLANG_ENABLE_MODULES = YES;
+                CLANG_ENABLE_OBJC_ARC = YES;
+                CLANG_ENABLE_OBJC_WEAK = YES;
+                CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+                CLANG_WARN_BOOL_CONVERSION = YES;
+                CLANG_WARN_COMMA = YES;
+                CLANG_WARN_CONSTANT_CONVERSION = YES;
+                CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+                CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+                CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+                CLANG_WARN_EMPTY_BODY = YES;
+                CLANG_WARN_ENUM_CONVERSION = YES;
+                CLANG_WARN_INFINITE_RECURSION = YES;
+                CLANG_WARN_INT_CONVERSION = YES;
+                CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+                CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+                CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+                CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+                CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+                CLANG_WARN_STRICT_PROTOTYPES = YES;
+                CLANG_WARN_SUSPICIOUS_MOVE = YES;
+                CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+                CLANG_WARN_UNREACHABLE_CODE = YES;
+                CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+                CODE_SIGN_IDENTITY = "Mac Developer";
+                COPY_PHASE_STRIP = NO;
+                DEBUG_INFORMATION_FORMAT = dwarf;
+                ENABLE_STRICT_OBJC_MSGSEND = YES;
+                ENABLE_TESTABILITY = YES;
+                GCC_C_LANGUAGE_STANDARD = gnu11;
+                GCC_DYNAMIC_NO_PIC = NO;
+                GCC_NO_COMMON_BLOCKS = YES;
+                GCC_OPTIMIZATION_LEVEL = 0;
+                GCC_PREPROCESSOR_DEFINITIONS = (
+                    "DEBUG=1",
+                    "$(inherited)",
+                );
+                GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+                GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+                GCC_WARN_UNDECLARED_SELECTOR = YES;
+                GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+                GCC_WARN_UNUSED_FUNCTION = YES;
+                GCC_WARN_UNUSED_VARIABLE = YES;
+                MACOSX_DEPLOYMENT_TARGET = 10.13;
+                MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+                MTL_FAST_MATH = YES;
+                ONLY_ACTIVE_ARCH = YES;
+                SDKROOT = macosx;
+                SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+                SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+            };
+            name = Debug;
+        };
+        F234A64821010CEB00516846 /* Release */ = {
+            isa = XCBuildConfiguration;
+            buildSettings = {
+                ALWAYS_SEARCH_USER_PATHS = NO;
+                CLANG_ANALYZER_NONNULL = YES;
+                CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+                CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+                CLANG_CXX_LIBRARY = "libc++";
+                CLANG_ENABLE_MODULES = YES;
+                CLANG_ENABLE_OBJC_ARC = YES;
+                CLANG_ENABLE_OBJC_WEAK = YES;
+                CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+                CLANG_WARN_BOOL_CONVERSION = YES;
+                CLANG_WARN_COMMA = YES;
+                CLANG_WARN_CONSTANT_CONVERSION = YES;
+                CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+                CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+                CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+                CLANG_WARN_EMPTY_BODY = YES;
+                CLANG_WARN_ENUM_CONVERSION = YES;
+                CLANG_WARN_INFINITE_RECURSION = YES;
+                CLANG_WARN_INT_CONVERSION = YES;
+                CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+                CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+                CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+                CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+                CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+                CLANG_WARN_STRICT_PROTOTYPES = YES;
+                CLANG_WARN_SUSPICIOUS_MOVE = YES;
+                CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+                CLANG_WARN_UNREACHABLE_CODE = YES;
+                CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+                CODE_SIGN_IDENTITY = "Mac Developer";
+                COPY_PHASE_STRIP = NO;
+                DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+                ENABLE_NS_ASSERTIONS = NO;
+                ENABLE_STRICT_OBJC_MSGSEND = YES;
+                GCC_C_LANGUAGE_STANDARD = gnu11;
+                GCC_NO_COMMON_BLOCKS = YES;
+                GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+                GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+                GCC_WARN_UNDECLARED_SELECTOR = YES;
+                GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+                GCC_WARN_UNUSED_FUNCTION = YES;
+                GCC_WARN_UNUSED_VARIABLE = YES;
+                MACOSX_DEPLOYMENT_TARGET = 10.13;
+                MTL_ENABLE_DEBUG_INFO = NO;
+                MTL_FAST_MATH = YES;
+                SDKROOT = macosx;
+                SWIFT_COMPILATION_MODE = wholemodule;
+                SWIFT_OPTIMIZATION_LEVEL = "-O";
+            };
+            name = Release;
+        };
+        F234A64A21010CEB00516846 /* Debug */ = {
+            isa = XCBuildConfiguration;
 			baseConfigurationReference = D4F5F74899F32CA9D37A0693 /* Pods-Flat-Land-Client.debug.xcconfig */;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = "Flat-Land-Client/Flat_Land_Client.entitlements";
-				CODE_SIGN_STYLE = Automatic;
-				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = 7F7BS4L457;
-				INFOPLIST_FILE = "Flat-Land-Client/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/../Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = "dsf.Flat-Land-Client";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
-			};
-			name = Debug;
-		};
-		F234A64B21010CEB00516846 /* Release */ = {
-			isa = XCBuildConfiguration;
+            buildSettings = {
+                ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+                CODE_SIGN_ENTITLEMENTS = "Flat-Land-Client/Flat_Land_Client.entitlements";
+                CODE_SIGN_STYLE = Automatic;
+                COMBINE_HIDPI_IMAGES = YES;
+                DEVELOPMENT_TEAM = 7F7BS4L457;
+                INFOPLIST_FILE = "Flat-Land-Client/Info.plist";
+                LD_RUNPATH_SEARCH_PATHS = (
+                    "$(inherited)",
+                    "@executable_path/../Frameworks",
+                );
+                PRODUCT_BUNDLE_IDENTIFIER = "dsf.Flat-Land-Client";
+                PRODUCT_NAME = "$(TARGET_NAME)";
+                SWIFT_OBJC_BRIDGING_HEADER = "Flat-Land-Client/C/bridge_header.h";
+                SWIFT_VERSION = 4.2;
+            };
+            name = Debug;
+        };
+        F234A64B21010CEB00516846 /* Release */ = {
+            isa = XCBuildConfiguration;
 			baseConfigurationReference = 32A92A3232BC30F4811EBA8C /* Pods-Flat-Land-Client.release.xcconfig */;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = "Flat-Land-Client/Flat_Land_Client.entitlements";
-				CODE_SIGN_STYLE = Automatic;
-				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = 7F7BS4L457;
-				INFOPLIST_FILE = "Flat-Land-Client/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/../Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = "dsf.Flat-Land-Client";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
-			};
-			name = Release;
-		};
-		F234A64D21010CEB00516846 /* Debug */ = {
-			isa = XCBuildConfiguration;
+            buildSettings = {
+                ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+                CODE_SIGN_ENTITLEMENTS = "Flat-Land-Client/Flat_Land_Client.entitlements";
+                CODE_SIGN_STYLE = Automatic;
+                COMBINE_HIDPI_IMAGES = YES;
+                DEVELOPMENT_TEAM = 7F7BS4L457;
+                INFOPLIST_FILE = "Flat-Land-Client/Info.plist";
+                LD_RUNPATH_SEARCH_PATHS = (
+                    "$(inherited)",
+                    "@executable_path/../Frameworks",
+                );
+                PRODUCT_BUNDLE_IDENTIFIER = "dsf.Flat-Land-Client";
+                PRODUCT_NAME = "$(TARGET_NAME)";
+                SWIFT_VERSION = 4.2;
+            };
+            name = Release;
+        };
+        F234A64D21010CEB00516846 /* Debug */ = {
+            isa = XCBuildConfiguration;
 			baseConfigurationReference = 29E4ADB3255FBF7AA472E951 /* Pods-Flat-Land-ClientTests.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = 7F7BS4L457;
-				INFOPLIST_FILE = "Flat-Land-ClientTests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/../Frameworks",
-					"@loader_path/../Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = "dsf.Flat-Land-ClientTests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Flat-Land-Client.app/Contents/MacOS/Flat-Land-Client";
-			};
-			name = Debug;
-		};
-		F234A64E21010CEB00516846 /* Release */ = {
-			isa = XCBuildConfiguration;
+            buildSettings = {
+                ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+                BUNDLE_LOADER = "$(TEST_HOST)";
+                CODE_SIGN_STYLE = Automatic;
+                COMBINE_HIDPI_IMAGES = YES;
+                DEVELOPMENT_TEAM = 7F7BS4L457;
+                INFOPLIST_FILE = "Flat-Land-ClientTests/Info.plist";
+                LD_RUNPATH_SEARCH_PATHS = (
+                    "$(inherited)",
+                    "@executable_path/../Frameworks",
+                    "@loader_path/../Frameworks",
+                );
+                PRODUCT_BUNDLE_IDENTIFIER = "dsf.Flat-Land-ClientTests";
+                PRODUCT_NAME = "$(TARGET_NAME)";
+                SWIFT_VERSION = 4.2;
+                TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Flat-Land-Client.app/Contents/MacOS/Flat-Land-Client";
+            };
+            name = Debug;
+        };
+        F234A64E21010CEB00516846 /* Release */ = {
+            isa = XCBuildConfiguration;
 			baseConfigurationReference = 42BF79093629C4BCD2D6C190 /* Pods-Flat-Land-ClientTests.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = 7F7BS4L457;
-				INFOPLIST_FILE = "Flat-Land-ClientTests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/../Frameworks",
-					"@loader_path/../Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = "dsf.Flat-Land-ClientTests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Flat-Land-Client.app/Contents/MacOS/Flat-Land-Client";
-			};
-			name = Release;
-		};
-		F234A65021010CEB00516846 /* Debug */ = {
-			isa = XCBuildConfiguration;
+            buildSettings = {
+                ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+                BUNDLE_LOADER = "$(TEST_HOST)";
+                CODE_SIGN_STYLE = Automatic;
+                COMBINE_HIDPI_IMAGES = YES;
+                DEVELOPMENT_TEAM = 7F7BS4L457;
+                INFOPLIST_FILE = "Flat-Land-ClientTests/Info.plist";
+                LD_RUNPATH_SEARCH_PATHS = (
+                    "$(inherited)",
+                    "@executable_path/../Frameworks",
+                    "@loader_path/../Frameworks",
+                );
+                PRODUCT_BUNDLE_IDENTIFIER = "dsf.Flat-Land-ClientTests";
+                PRODUCT_NAME = "$(TARGET_NAME)";
+                SWIFT_VERSION = 4.2;
+                TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Flat-Land-Client.app/Contents/MacOS/Flat-Land-Client";
+            };
+            name = Release;
+        };
+        F234A65021010CEB00516846 /* Debug */ = {
+            isa = XCBuildConfiguration;
 			baseConfigurationReference = 675CA642507E479397EE0523 /* Pods-Flat-Land-ClientUITests.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = 7F7BS4L457;
-				INFOPLIST_FILE = "Flat-Land-ClientUITests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/../Frameworks",
-					"@loader_path/../Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = "dsf.Flat-Land-ClientUITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
-				TEST_TARGET_NAME = "Flat-Land-Client";
-			};
-			name = Debug;
-		};
-		F234A65121010CEB00516846 /* Release */ = {
-			isa = XCBuildConfiguration;
+            buildSettings = {
+                ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+                CODE_SIGN_STYLE = Automatic;
+                COMBINE_HIDPI_IMAGES = YES;
+                DEVELOPMENT_TEAM = 7F7BS4L457;
+                INFOPLIST_FILE = "Flat-Land-ClientUITests/Info.plist";
+                LD_RUNPATH_SEARCH_PATHS = (
+                    "$(inherited)",
+                    "@executable_path/../Frameworks",
+                    "@loader_path/../Frameworks",
+                );
+                PRODUCT_BUNDLE_IDENTIFIER = "dsf.Flat-Land-ClientUITests";
+                PRODUCT_NAME = "$(TARGET_NAME)";
+                SWIFT_VERSION = 4.2;
+                TEST_TARGET_NAME = "Flat-Land-Client";
+            };
+            name = Debug;
+        };
+        F234A65121010CEB00516846 /* Release */ = {
+            isa = XCBuildConfiguration;
 			baseConfigurationReference = 8DC2C58E0FD6A670949D229D /* Pods-Flat-Land-ClientUITests.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = 7F7BS4L457;
-				INFOPLIST_FILE = "Flat-Land-ClientUITests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/../Frameworks",
-					"@loader_path/../Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = "dsf.Flat-Land-ClientUITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
-				TEST_TARGET_NAME = "Flat-Land-Client";
-			};
-			name = Release;
-		};
+            buildSettings = {
+                ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+                CODE_SIGN_STYLE = Automatic;
+                COMBINE_HIDPI_IMAGES = YES;
+                DEVELOPMENT_TEAM = 7F7BS4L457;
+                INFOPLIST_FILE = "Flat-Land-ClientUITests/Info.plist";
+                LD_RUNPATH_SEARCH_PATHS = (
+                    "$(inherited)",
+                    "@executable_path/../Frameworks",
+                    "@loader_path/../Frameworks",
+                );
+                PRODUCT_BUNDLE_IDENTIFIER = "dsf.Flat-Land-ClientUITests";
+                PRODUCT_NAME = "$(TARGET_NAME)";
+                SWIFT_VERSION = 4.2;
+                TEST_TARGET_NAME = "Flat-Land-Client";
+            };
+            name = Release;
+        };
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		F234A61E21010CEA00516846 /* Build configuration list for PBXProject "Flat-Land-Client" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				F234A64721010CEB00516846 /* Debug */,
-				F234A64821010CEB00516846 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		F234A64921010CEB00516846 /* Build configuration list for PBXNativeTarget "Flat-Land-Client" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				F234A64A21010CEB00516846 /* Debug */,
-				F234A64B21010CEB00516846 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		F234A64C21010CEB00516846 /* Build configuration list for PBXNativeTarget "Flat-Land-ClientTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				F234A64D21010CEB00516846 /* Debug */,
-				F234A64E21010CEB00516846 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		F234A64F21010CEB00516846 /* Build configuration list for PBXNativeTarget "Flat-Land-ClientUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				F234A65021010CEB00516846 /* Debug */,
-				F234A65121010CEB00516846 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
+        F234A61E21010CEA00516846 /* Build configuration list for PBXProject "Flat-Land-Client" */ = {
+            isa = XCConfigurationList;
+            buildConfigurations = (
+                F234A64721010CEB00516846 /* Debug */,
+                F234A64821010CEB00516846 /* Release */,
+            );
+            defaultConfigurationIsVisible = 0;
+            defaultConfigurationName = Release;
+        };
+        F234A64921010CEB00516846 /* Build configuration list for PBXNativeTarget "Flat-Land-Client" */ = {
+            isa = XCConfigurationList;
+            buildConfigurations = (
+                F234A64A21010CEB00516846 /* Debug */,
+                F234A64B21010CEB00516846 /* Release */,
+            );
+            defaultConfigurationIsVisible = 0;
+            defaultConfigurationName = Release;
+        };
+        F234A64C21010CEB00516846 /* Build configuration list for PBXNativeTarget "Flat-Land-ClientTests" */ = {
+            isa = XCConfigurationList;
+            buildConfigurations = (
+                F234A64D21010CEB00516846 /* Debug */,
+                F234A64E21010CEB00516846 /* Release */,
+            );
+            defaultConfigurationIsVisible = 0;
+            defaultConfigurationName = Release;
+        };
+        F234A64F21010CEB00516846 /* Build configuration list for PBXNativeTarget "Flat-Land-ClientUITests" */ = {
+            isa = XCConfigurationList;
+            buildConfigurations = (
+                F234A65021010CEB00516846 /* Debug */,
+                F234A65121010CEB00516846 /* Release */,
+            );
+            defaultConfigurationIsVisible = 0;
+            defaultConfigurationName = Release;
+        };
 /* End XCConfigurationList section */
-	};
-	rootObject = F234A61B21010CEA00516846 /* Project object */;
+    };
+    rootObject = F234A61B21010CEA00516846 /* Project object */;
 }
