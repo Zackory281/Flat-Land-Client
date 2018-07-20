@@ -715,7 +715,7 @@
                                 <subviews>
                                     <textField verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="vvW-Cp-WUc">
                                         <rect key="frame" x="5" y="87" width="96" height="22"/>
-                                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" borderStyle="bezel" alignment="center" placeholderString="localhost" drawsBackground="YES" id="3Zt-7i-iua">
+                                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" refusesFirstResponder="YES" sendsActionOnEndEditing="YES" borderStyle="bezel" alignment="center" placeholderString="localhost" drawsBackground="YES" id="3Zt-7i-iua">
                                             <font key="font" metaFont="system"/>
                                             <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
                                             <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
@@ -723,7 +723,7 @@
                                     </textField>
                                     <textField verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Zyv-Ov-M4H">
                                         <rect key="frame" x="5" y="43" width="96" height="22"/>
-                                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" borderStyle="bezel" alignment="center" placeholderString="8080" drawsBackground="YES" id="9XD-AY-Wzr">
+                                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" refusesFirstResponder="YES" sendsActionOnEndEditing="YES" borderStyle="bezel" alignment="center" placeholderString="8080" drawsBackground="YES" id="9XD-AY-Wzr">
                                             <font key="font" metaFont="system"/>
                                             <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
                                             <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
@@ -760,6 +760,13 @@
                             <constraint firstItem="f3D-uV-IAT" firstAttribute="centerX" secondItem="m2S-Jp-Qdl" secondAttribute="centerX" id="GB1-Ej-Z89"/>
                             <constraint firstItem="f3D-uV-IAT" firstAttribute="centerY" secondItem="m2S-Jp-Qdl" secondAttribute="centerY" id="Vgf-Or-1rQ"/>
                         </constraints>
+                        <gestureRecognizers>
+                            <clickGestureRecognizer numberOfClicksRequired="1" id="uvA-eV-lAh">
+                                <connections>
+                                    <action selector="clicked:" target="m2S-Jp-Qdl" id="7aP-nP-Y32"/>
+                                </connections>
+                            </clickGestureRecognizer>
+                        </gestureRecognizers>
                         <connections>
                             <outlet property="addressTextField" destination="vvW-Cp-WUc" id="xIb-UF-Enu"/>
                             <outlet property="connectButton" destination="pL3-l9-zhb" id="xlE-4u-505"/>
@@ -767,6 +774,7 @@
                         </connections>
                     </view>
                     <connections>
+                        <outlet property="clickGesture" destination="uvA-eV-lAh" id="BaI-hc-B7N"/>
                         <outlet property="initView" destination="m2S-Jp-Qdl" id="PNi-ME-NqQ"/>
                         <segue destination="jB2-Ap-xzY" kind="show" id="52T-oe-BKJ"/>
                     </connections>
@@ -774,7 +782,7 @@
                 <customObject id="rPt-NT-nkU" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
                 <objectController id="qGL-y2-Ryk"/>
             </objects>
-            <point key="canvasLocation" x="75" y="655"/>
+            <point key="canvasLocation" x="654" y="692"/>
         </scene>
         <!--Master View Controller-->
         <scene sceneID="pXq-XP-FTf">
@@ -797,6 +805,9 @@
                                     <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
                                     <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                 </textFieldCell>
+                                <connections>
+                                    <binding destination="cLI-Ia-z7A" name="value" keyPath="selection.selection.notification" id="Wjl-MC-lAa"/>
+                                </connections>
                             </textField>
                         </subviews>
                         <constraints>
@@ -814,7 +825,12 @@
                     </connections>
                 </viewController>
                 <customObject id="Xu9-OP-ixM" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
-                <userDefaultsController representsSharedInstance="YES" id="iOc-T0-n9y"/>
+                <userDefaultsController representsSharedInstance="YES" id="Q9B-FW-tXz"/>
+                <objectController id="cLI-Ia-z7A">
+                    <connections>
+                        <binding destination="Q9B-FW-tXz" name="contentObject" keyPath="values.self.overlayData" id="TLz-3c-fel"/>
+                    </connections>
+                </objectController>
             </objects>
             <point key="canvasLocation" x="654" y="250"/>
         </scene>
@@ -829,7 +845,7 @@
                 </viewController>
                 <customObject id="lf7-3U-MeS" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="677" y="655"/>
+            <point key="canvasLocation" x="1256" y="692"/>
         </scene>
     </scenes>
 </document>

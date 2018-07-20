@@ -18,23 +18,17 @@ class InitView: NSView {
     
     @IBAction func connect(_ sender: Any) {
         guard let delegate = self.initViewDelegate else {print("not init view delegate,e xiting init view");return;}
-        let add = addressTextField.placeholderString ?? addressTextField.stringValue
-        let port = Int32(portTextField.placeholderString ?? portTextField.stringValue)!
+        let add = addressTextField.stringValue == "" ? addressTextField.placeholderString! :addressTextField.stringValue
+        let port = Int32(portTextField.stringValue == "" ? portTextField.placeholderString!:portTextField.stringValue)!
         delegate.connectToServer(address: add, port: port, name: "blowa", id: 45, config: 89)
     }
-    
-    let gest = NSPressGestureRecognizer(target: self, action: #selector(clickedBackground))
-    
-    @objc func clickedBackground() {
-        print("I am clicked")
-        
-        //addressTextField.resignFirstResponder()
+    @IBAction func clicked(_ sender: Any) {
+        //self.window!.resignFirstResponder()
+        self.window!.makeFirstResponder(nil)
     }
     
     override func draw(_ dirtyRect: NSRect) {
         super.draw(dirtyRect)
-        
-        self.addGestureRecognizer(gest)
     }
     
     override func keyDown(with event: NSEvent) {
