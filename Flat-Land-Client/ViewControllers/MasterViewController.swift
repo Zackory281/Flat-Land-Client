@@ -9,16 +9,25 @@
 import Cocoa
 
 class MasterViewController: NSViewController {
-
-    @objc dynamic var overlayData = OverlayData()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do view setup here.
+        let storyboard = NSStoryboard(name: "Main", bundle: Bundle.main)
+        let connectionViewController = storyboard.instantiateController(withIdentifier: "ConnectionViewController") as! ConnectionViewController
+        self.addChild(connectionViewController)
+        view.addSubview(connectionViewController.view)
+        connectionViewController.view.frame = view.bounds
+        self.overlayData.str = "sdf"
+        //self.object.setValue("str bra", forKey: "str")
     }
     
-    class OverlayData:NSObject{
-        var notification:String = "no notifications yet"
-    }
+    @IBOutlet weak var statusLabel: NSTextField!
+    @objc dynamic var overlayData = OverlayData()
     
+    @IBOutlet var object: NSObjectController!
+}
+
+class OverlayData:NSDictionary{
+    var notification:NSString = "no notifications yet"
+    var str:NSString = "no notifications yet2"
 }

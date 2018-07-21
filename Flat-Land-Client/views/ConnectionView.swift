@@ -8,22 +8,22 @@
 
 import Cocoa
 
-class InitView: NSView {
+class ConnectionView: NSView {
 
     @IBOutlet weak var addressTextField: NSTextField!
     @IBOutlet weak var portTextField: NSTextField!
     
     @IBOutlet weak var connectButton: NSButton!
-    var initViewDelegate:InitViewDelegate?
+    weak var connectionViewDelegate:ConnectionViewDelegate?
     
     @IBAction func connect(_ sender: Any) {
-        guard let delegate = self.initViewDelegate else {print("not init view delegate,e xiting init view");return;}
+        guard let delegate = self.connectionViewDelegate else {print("not init view delegate,e xiting init view");return;}
         let add = addressTextField.stringValue == "" ? addressTextField.placeholderString! :addressTextField.stringValue
         let port = Int32(portTextField.stringValue == "" ? portTextField.placeholderString!:portTextField.stringValue)!
         delegate.connectToServer(address: add, port: port, name: "blowa", id: 45, config: 89)
     }
     @IBAction func clicked(_ sender: Any) {
-        //self.window!.resignFirstResponder()
+        self.window!.resignFirstResponder()
         self.window!.makeFirstResponder(nil)
     }
     
@@ -49,6 +49,6 @@ class InitView: NSView {
     
 }
 
-protocol InitViewDelegate {
+protocol ConnectionViewDelegate: class {
     func connectToServer(address:String, port:Int32, name:String, id:Int8, config:Int8)
 }

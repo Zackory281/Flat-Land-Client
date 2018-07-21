@@ -29,6 +29,7 @@ public class ClientModelController{
     
     func sendMessage(_ message:String) {
         self.client.sendMessage(message, address: nil)
+        
     }
     
     func sendData(_ data:Data){

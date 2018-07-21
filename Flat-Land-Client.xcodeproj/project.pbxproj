@@ -18,10 +18,14 @@
 		F234A64521010CEB00516846 /* Flat_Land_ClientUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F234A64421010CEB00516846 /* Flat_Land_ClientUITests.swift */; };
 		F234A65621010D7200516846 /* Utils.c in Sources */ = {isa = PBXBuildFile; fileRef = F234A65521010D7200516846 /* Utils.c */; };
 		F234A6592101115900516846 /* ClientUDP.swift in Sources */ = {isa = PBXBuildFile; fileRef = F234A6582101115900516846 /* ClientUDP.swift */; };
-		F234A65F2101160500516846 /* InitView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F234A65E2101160500516846 /* InitView.swift */; };
-		F234A6622101170100516846 /* InitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F234A6612101170100516846 /* InitViewController.swift */; };
+		F234A65F2101160500516846 /* ConnectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F234A65E2101160500516846 /* ConnectionView.swift */; };
+		F234A6622101170100516846 /* ConnectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F234A6612101170100516846 /* ConnectionViewController.swift */; };
 		F234A669210117D200516846 /* ClientModelController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F234A668210117D200516846 /* ClientModelController.swift */; };
 		F2BDAA71210187CE00587E2C /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2BDAA70210187CE00587E2C /* MasterViewController.swift */; };
+		F2BDAA742102816D00587E2C /* windows.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2BDAA732102816D00587E2C /* windows.swift */; };
+		F2BDAA76210296F600587E2C /* Segue.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2BDAA75210296F600587E2C /* Segue.swift */; };
+		F2BDAA782102AED500587E2C /* InitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2BDAA772102AED500587E2C /* InitViewController.swift */; };
+		F2BDAA7E2102C5FE00587E2C /* MasterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2BDAA7D2102C5FE00587E2C /* MasterView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,10 +72,14 @@
 		F234A65421010D7200516846 /* bridge_header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bridge_header.h; sourceTree = "<group>"; };
 		F234A65521010D7200516846 /* Utils.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = Utils.c; sourceTree = "<group>"; };
 		F234A6582101115900516846 /* ClientUDP.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClientUDP.swift; sourceTree = "<group>"; };
-		F234A65E2101160500516846 /* InitView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitView.swift; sourceTree = "<group>"; };
-		F234A6612101170100516846 /* InitViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitViewController.swift; sourceTree = "<group>"; };
+		F234A65E2101160500516846 /* ConnectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectionView.swift; sourceTree = "<group>"; };
+		F234A6612101170100516846 /* ConnectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectionViewController.swift; sourceTree = "<group>"; };
 		F234A668210117D200516846 /* ClientModelController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClientModelController.swift; sourceTree = "<group>"; };
 		F2BDAA70210187CE00587E2C /* MasterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterViewController.swift; sourceTree = "<group>"; };
+		F2BDAA732102816D00587E2C /* windows.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = windows.swift; sourceTree = "<group>"; };
+		F2BDAA75210296F600587E2C /* Segue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Segue.swift; sourceTree = "<group>"; };
+		F2BDAA772102AED500587E2C /* InitViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitViewController.swift; sourceTree = "<group>"; };
+		F2BDAA7D2102C5FE00587E2C /* MasterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -150,6 +158,7 @@
 		F234A62521010CEA00516846 /* Flat-Land-Client */ = {
 			isa = PBXGroup;
 			children = (
+				F2BDAA722102815300587E2C /* Window */,
 				F234A663210117A000516846 /* ModelControllers */,
 				F234A660210116AA00516846 /* ViewControllers */,
 				F234A65B210115B100516846 /* views */,
@@ -204,7 +213,8 @@
 		F234A65B210115B100516846 /* views */ = {
 			isa = PBXGroup;
 			children = (
-				F234A65E2101160500516846 /* InitView.swift */,
+				F234A65E2101160500516846 /* ConnectionView.swift */,
+				F2BDAA7D2102C5FE00587E2C /* MasterView.swift */,
 			);
 			path = views;
 			sourceTree = "<group>";
@@ -212,8 +222,9 @@
 		F234A660210116AA00516846 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				F234A6612101170100516846 /* InitViewController.swift */,
+				F234A6612101170100516846 /* ConnectionViewController.swift */,
 				F2BDAA70210187CE00587E2C /* MasterViewController.swift */,
+				F2BDAA772102AED500587E2C /* InitViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -224,6 +235,15 @@
 				F234A668210117D200516846 /* ClientModelController.swift */,
 			);
 			path = ModelControllers;
+			sourceTree = "<group>";
+		};
+		F2BDAA722102815300587E2C /* Window */ = {
+			isa = PBXGroup;
+			children = (
+				F2BDAA732102816D00587E2C /* windows.swift */,
+				F2BDAA75210296F600587E2C /* Segue.swift */,
+			);
+			path = Window;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -437,9 +457,13 @@
 			files = (
 				F2BDAA71210187CE00587E2C /* MasterViewController.swift in Sources */,
 				F234A65621010D7200516846 /* Utils.c in Sources */,
-				F234A65F2101160500516846 /* InitView.swift in Sources */,
-				F234A6622101170100516846 /* InitViewController.swift in Sources */,
+				F234A65F2101160500516846 /* ConnectionView.swift in Sources */,
+				F2BDAA76210296F600587E2C /* Segue.swift in Sources */,
+				F234A6622101170100516846 /* ConnectionViewController.swift in Sources */,
+				F2BDAA782102AED500587E2C /* InitViewController.swift in Sources */,
+				F2BDAA7E2102C5FE00587E2C /* MasterView.swift in Sources */,
 				F234A62921010CEA00516846 /* ViewController.swift in Sources */,
+				F2BDAA742102816D00587E2C /* windows.swift in Sources */,
 				F234A669210117D200516846 /* ClientModelController.swift in Sources */,
 				F234A6592101115900516846 /* ClientUDP.swift in Sources */,
 				F234A62721010CEA00516846 /* AppDelegate.swift in Sources */,
