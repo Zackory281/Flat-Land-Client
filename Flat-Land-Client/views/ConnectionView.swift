@@ -20,8 +20,9 @@ class ConnectionView: NSView {
         guard let delegate = self.connectionViewDelegate else {print("not init view delegate,e xiting init view");return;}
         let add = addressTextField.stringValue == "" ? addressTextField.placeholderString! :addressTextField.stringValue
         let port = Int32(portTextField.stringValue == "" ? portTextField.placeholderString!:portTextField.stringValue)!
-        delegate.connectToServer(address: add, port: port, name: "blowa", id: 45, config: 89)
+        delegate.connectToServer(address: add, port: port)
     }
+    
     @IBAction func clicked(_ sender: Any) {
         self.window!.resignFirstResponder()
         self.window!.makeFirstResponder(nil)
@@ -50,5 +51,5 @@ class ConnectionView: NSView {
 }
 
 protocol ConnectionViewDelegate: class {
-    func connectToServer(address:String, port:Int32, name:String, id:Int8, config:Int8)
+    func connectToServer(address:String, port:Int32)
 }

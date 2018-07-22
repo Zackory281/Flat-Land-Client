@@ -12,7 +12,7 @@ class windows: NSWindowController {
 
     override func windowDidLoad() {
         super.windowDidLoad()
-        //performSegue(withIdentifier: NSStoryboardSegue.Identifier, sender: <#T##Any?#>)
+        //performSegue(withIdentifier: NSStoryboardSegue.Identifier, sender: T##Any?)
     }
 
 }

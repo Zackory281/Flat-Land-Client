@@ -14,20 +14,22 @@ class MasterViewController: NSViewController {
         super.viewDidLoad()
         let storyboard = NSStoryboard(name: "Main", bundle: Bundle.main)
         let connectionViewController = storyboard.instantiateController(withIdentifier: "ConnectionViewController") as! ConnectionViewController
+        connectionViewController.clientModelController = ClientModelController()
         self.addChild(connectionViewController)
         view.addSubview(connectionViewController.view)
         connectionViewController.view.frame = view.bounds
-        self.overlayData.str = "sdf"
-        //self.object.setValue("str bra", forKey: "str")
     }
     
     @IBOutlet weak var statusLabel: NSTextField!
-    @objc dynamic var overlayData = OverlayData()
-    
-    @IBOutlet var object: NSObjectController!
+    @objc dynamic var overlayData = OverlayData("No status yet.", 17)
 }
 
-class OverlayData:NSDictionary{
-    var notification:NSString = "no notifications yet"
-    var str:NSString = "no notifications yet2"
+class OverlayData: NSObject{
+    @objc dynamic var notification:NSString
+    @objc dynamic var age:NSInteger
+    
+    init(_ notification:NSString, _ age:NSInteger) {
+        self.notification = notification
+        self.age = age
+    }
 }

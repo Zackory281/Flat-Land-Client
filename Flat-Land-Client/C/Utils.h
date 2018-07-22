@@ -11,7 +11,12 @@
 
 #include <stdio.h>
 
-enum Direction{
+#define Init_opcode 0
+#define Check_opcode 1
+#define Update_opcode 2
+#define MAX_NAME_LEN 6
+
+enum ControlDirection{
     UP,
     DOWN,
     RIGHT,
@@ -25,19 +30,26 @@ struct PlayerInitPacket{
     int8_t config;
 };
 
+struct PlayerConnectionCheckPacket{
+    int8_t opcode;
+    int32_t hash;
+};
+
 struct PlayerControlPacket {
     int8_t opcode;
-    enum Direction direction;
+    enum ControlDirection direction;
     float angle;
 };
 
 typedef union{
     struct PlayerInitPacket initPacket;
     struct PlayerControlPacket controlPacket;
+    struct PlayerConnectionCheckPacket connectionCheckPacket;
 }PlayerPacket;
 
-char* getPlayerName(struct PlayerInitPacket *packet);
-int32_t getPlayerId(struct PlayerInitPacket *packet);
+char* getPlayerName(struct PlayerInitPacket packet);
 struct PlayerInitPacket* getInitPacket(char* name, int8_t id, int8_t config);
+struct PlayerConnectionCheckPacket* getCheckPacket(int32_t hash);
+struct PlayerControlPacket* getControlPacket(float angle,enum ControlDirection direction);
 
 #endif /* Utils_h */

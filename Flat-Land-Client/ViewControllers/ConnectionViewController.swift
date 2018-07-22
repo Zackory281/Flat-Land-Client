@@ -8,11 +8,11 @@
 
 import Cocoa
 
-class ConnectionViewController: NSViewController, ConnectionViewDelegate {
+class ConnectionViewController: NSViewController, ConnectionViewDelegate, ClientModelControllerDelegate {
 
     @IBOutlet var connectionView: ConnectionView!
     
-    var clientModelController:ClientModelController?
+    var clientModelController:ClientModelController!
     @IBOutlet weak var clickGesture: NSClickGestureRecognizer!
     
     override func viewDidLoad() {
@@ -22,10 +22,10 @@ class ConnectionViewController: NSViewController, ConnectionViewDelegate {
         clickGesture.delaysPrimaryMouseButtonEvents = false
     }
     
-    func connectToServer(address: String, port: Int32, name: String, id: Int8, config: Int8) {
-        clientModelController = ClientModelController(address: address, port: port)
-        clientModelController!.startConnection()
-        clientModelController!.sendInitPack(name: name, id: id, config: config)
+    func connectToServer(address:String, port:Int32) {
+        clientModelController.setupConnection(address: address, port: port)
+        clientModelController.startConnection()
+        //clientModelController.sendInitPack(name: name, id: id, config: config)
         performSegue(withIdentifier: "toInitViewController", sender: nil)
     }
     
@@ -35,13 +35,19 @@ class ConnectionViewController: NSViewController, ConnectionViewDelegate {
         }
     }
     
-    override func viewWillDisappear() {
-        print("will will disappear")
+    @objc dynamic var connectionData:ConnectionData = ConnectionData()
+    
+    func receiveConnectionCheckPacket(packet: PlayerConnectionCheckPacket) {
+        print("received check hash of \(packet.hash)")
     }
+    
     deinit {
         self.view.removeFromSuperview()
         print("Connectionviewcontroller... GONE!")
     }
 }
 
-
+class ConnectionData: NSObject {
+    @objc dynamic var address:NSString?
+    //@objc dynamic var port:Int
+}

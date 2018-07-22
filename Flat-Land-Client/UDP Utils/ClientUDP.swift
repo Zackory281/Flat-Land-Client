@@ -86,18 +86,25 @@ class ClientUDP {
             var readData = Data(capacity: 2048)
             repeat{
                 do{
-                    let messageInfo = try self.socket.readDatagram(into: &readData)
-                    if let message = String(data:readData, encoding:.utf8){
-                        print("received data:\(String(data:readData, encoding:.utf8))")
-                    }else{
-                        print("failed to read message with info:\(messageInfo)")
-                    }
+                    let _ = try self.socket.readDatagram(into: &readData)
+                    self.decodeListenedData(data: readData)
                 }catch{
                     print("failed to read datagram: \(error)")
                 }
                 readData.count = 0
             }while self.active
             print("Stopped reading data, closing socket...")
+        }
+    }
+    
+    func decodeListenedData(data:Data){
+        data.withUnsafeBytes { (ptr:UnsafePointer<PlayerPacket>) in
+            switch Int32(ptr.pointee.initPacket.opcode) {
+            case Check_opcode:
+                print(ptr.pointee.connectionCheckPacket)
+            default:
+                print("uncognized opcode of \(ptr.pointee.initPacket.opcode)")
+            }
         }
     }
 }

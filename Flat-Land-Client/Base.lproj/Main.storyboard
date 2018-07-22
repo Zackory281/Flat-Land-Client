@@ -732,7 +732,10 @@
                                 <rect key="frame" x="187" y="80" width="106" height="109"/>
                                 <subviews>
                                     <textField verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="vvW-Cp-WUc">
-                                        <rect key="frame" x="5" y="87" width="96" height="22"/>
+                                        <rect key="frame" x="3" y="87" width="100" height="22"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="100" id="lhC-Qv-8aR"/>
+                                        </constraints>
                                         <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" refusesFirstResponder="YES" sendsActionOnEndEditing="YES" borderStyle="bezel" alignment="center" placeholderString="localhost" drawsBackground="YES" id="3Zt-7i-iua">
                                             <font key="font" metaFont="system"/>
                                             <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
@@ -740,7 +743,7 @@
                                         </textFieldCell>
                                     </textField>
                                     <textField verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Zyv-Ov-M4H">
-                                        <rect key="frame" x="5" y="43" width="96" height="22"/>
+                                        <rect key="frame" x="3" y="43" width="100" height="22"/>
                                         <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" refusesFirstResponder="YES" sendsActionOnEndEditing="YES" borderStyle="bezel" alignment="center" placeholderString="8080" drawsBackground="YES" id="9XD-AY-Wzr">
                                             <font key="font" metaFont="system"/>
                                             <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
@@ -760,6 +763,7 @@
                                 </subviews>
                                 <constraints>
                                     <constraint firstItem="Zyv-Ov-M4H" firstAttribute="centerX" secondItem="pL3-l9-zhb" secondAttribute="centerX" id="Bo4-kd-iL1"/>
+                                    <constraint firstItem="Zyv-Ov-M4H" firstAttribute="width" secondItem="vvW-Cp-WUc" secondAttribute="width" id="dqJ-Sn-nGJ"/>
                                     <constraint firstItem="pL3-l9-zhb" firstAttribute="leading" secondItem="f3D-uV-IAT" secondAttribute="leading" constant="14" id="q0i-uE-iwy"/>
                                 </constraints>
                                 <visibilityPriorities>
@@ -798,6 +802,15 @@
                     </connections>
                 </viewController>
                 <customObject id="rPt-NT-nkU" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+                <objectController id="tm0-Gf-yP9">
+                    <connections>
+                        <binding destination="XfG-lQ-9wD" name="contentObject" keyPath="self.connectionData" id="f0n-CJ-5ds">
+                            <dictionary key="options">
+                                <bool key="NSValidatesImmediately" value="YES"/>
+                            </dictionary>
+                        </binding>
+                    </connections>
+                </objectController>
             </objects>
             <point key="canvasLocation" x="654" y="692"/>
         </scene>
@@ -816,9 +829,17 @@
                                 <rect key="frame" x="18" y="231" width="444" height="19"/>
                                 <textFieldCell key="cell" lineBreakMode="clipping" alignment="center" placeholderString="no status yet" id="9cy-Y8-V7B">
                                     <font key="font" metaFont="system" size="15"/>
-                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="textColor" name="windowFrameColor" catalog="System" colorSpace="catalog"/>
                                     <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                 </textFieldCell>
+                                <connections>
+                                    <binding destination="iNn-aE-fek" name="displayPatternValue1" keyPath="selection.notification" id="oJY-Tl-pft">
+                                        <dictionary key="options">
+                                            <string key="NSDisplayPattern">%{value1}@</string>
+                                            <string key="NSNoSelectionPlaceholder">not status pet.</string>
+                                        </dictionary>
+                                    </binding>
+                                </connections>
                             </textField>
                         </subviews>
                         <constraints>
@@ -837,6 +858,11 @@
                     </connections>
                 </viewController>
                 <customObject id="Xu9-OP-ixM" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+                <objectController id="iNn-aE-fek">
+                    <connections>
+                        <binding destination="VUu-m7-PZC" name="contentObject" keyPath="self.overlayData" id="20g-qW-xbO"/>
+                    </connections>
+                </objectController>
             </objects>
             <point key="canvasLocation" x="654" y="250"/>
         </scene>
