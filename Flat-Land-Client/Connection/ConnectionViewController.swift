@@ -49,5 +49,5 @@ class ConnectionViewController: NSViewController, ConnectionViewDelegate, Client
 
 class ConnectionData: NSObject {
     @objc dynamic var address:NSString?
-    //@objc dynamic var port:Int
+    @objc dynamic var port:NSString?
 }

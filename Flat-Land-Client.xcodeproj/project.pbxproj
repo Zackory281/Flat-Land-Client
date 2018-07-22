@@ -158,6 +158,7 @@
 		F234A62521010CEA00516846 /* Flat-Land-Client */ = {
 			isa = PBXGroup;
 			children = (
+				F2FA61F221051BF500BB1D5D /* Connection */,
 				F2BDAA722102815300587E2C /* Window */,
 				F234A663210117A000516846 /* ModelControllers */,
 				F234A660210116AA00516846 /* ViewControllers */,
@@ -213,7 +214,6 @@
 		F234A65B210115B100516846 /* views */ = {
 			isa = PBXGroup;
 			children = (
-				F234A65E2101160500516846 /* ConnectionView.swift */,
 				F2BDAA7D2102C5FE00587E2C /* MasterView.swift */,
 			);
 			path = views;
@@ -222,7 +222,6 @@
 		F234A660210116AA00516846 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				F234A6612101170100516846 /* ConnectionViewController.swift */,
 				F2BDAA70210187CE00587E2C /* MasterViewController.swift */,
 				F2BDAA772102AED500587E2C /* InitViewController.swift */,
 			);
@@ -244,6 +243,15 @@
 				F2BDAA75210296F600587E2C /* Segue.swift */,
 			);
 			path = Window;
+			sourceTree = "<group>";
+		};
+		F2FA61F221051BF500BB1D5D /* Connection */ = {
+			isa = PBXGroup;
+			children = (
+				F234A6612101170100516846 /* ConnectionViewController.swift */,
+				F234A65E2101160500516846 /* ConnectionView.swift */,
+			);
+			path = Connection;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

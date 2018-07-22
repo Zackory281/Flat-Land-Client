@@ -802,15 +802,6 @@
                     </connections>
                 </viewController>
                 <customObject id="rPt-NT-nkU" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
-                <objectController id="tm0-Gf-yP9">
-                    <connections>
-                        <binding destination="XfG-lQ-9wD" name="contentObject" keyPath="self.connectionData" id="f0n-CJ-5ds">
-                            <dictionary key="options">
-                                <bool key="NSValidatesImmediately" value="YES"/>
-                            </dictionary>
-                        </binding>
-                    </connections>
-                </objectController>
             </objects>
             <point key="canvasLocation" x="654" y="692"/>
         </scene>
