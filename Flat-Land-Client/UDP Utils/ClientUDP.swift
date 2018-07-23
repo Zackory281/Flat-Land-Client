@@ -19,6 +19,7 @@ class ClientUDP {
     var clientSendQueue = DispatchQueue(label: "client.write",attributes: .concurrent)
     var active = true
     var serverAddress:Socket.Address?
+    weak var delegate:ClientDelegate?
     
     init(address:String="localhost", port:Int32=8080) {
         self.port = port
@@ -67,6 +68,7 @@ class ClientUDP {
         guard let address = address ?? self.serverAddress else { print("no address to write to"); return}
         do{
             try socket.write(from: message, to: address)
+            print("written tr \(message) to add")
         }catch{
             print("failed to write message \(message) to address")
         }
@@ -76,6 +78,7 @@ class ClientUDP {
         guard let address = address ?? self.serverAddress else { print("no address to write to"); return}
         do{
             try socket.write(from: data, to: address)
+            print("written data \(data) to add")
         }catch{
             print("failed to write data \(data) to address")
         }
@@ -86,7 +89,8 @@ class ClientUDP {
             var readData = Data(capacity: 2048)
             repeat{
                 do{
-                    let _ = try self.socket.readDatagram(into: &readData)
+                    let info = try self.socket.readDatagram(into: &readData)
+                    print(getHostDataString(info.address!))
                     self.decodeListenedData(data: readData)
                 }catch{
                     print("failed to read datagram: \(error)")
@@ -98,13 +102,19 @@ class ClientUDP {
     }
     
     func decodeListenedData(data:Data){
-        data.withUnsafeBytes { (ptr:UnsafePointer<PlayerPacket>) in
-            switch Int32(ptr.pointee.initPacket.opcode) {
-            case Check_opcode:
-                print(ptr.pointee.connectionCheckPacket)
-            default:
-                print("uncognized opcode of \(ptr.pointee.initPacket.opcode)")
-            }
-        }
+        print("listened data \(data)")
+        guard let delegate = self.delegate, let receiveData = delegate.receiveData else { print("delegate doesn't exist, not processing data"); return;}
+        receiveData(data)
     }
+    
+    deinit {
+        print("client... GONE!")
+    }
+}
+
+@objc protocol ClientDelegate{
+    @objc optional func receiveData(data:Data)
+}
+func getHostDataString(_ address:Socket.Address) -> String{
+    return String(describing: Socket.hostnameAndPort(from: address))
 }

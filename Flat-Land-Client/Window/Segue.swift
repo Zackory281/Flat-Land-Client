@@ -23,13 +23,13 @@ class Segue: NSStoryboardSegue {
         let sourceViewController = self.sourceController as! NSViewController
         let destinationViewController = self.destinationController as! NSViewController
         let containerViewController = sourceViewController.parent as! MasterViewController
-        containerViewController.insertChild(destinationViewController, at: 1)
+        containerViewController.addChild(destinationViewController)
         destinationViewController.view.wantsLayer = true
         sourceViewController.view.wantsLayer = true
         
         containerViewController.transition(from: sourceViewController, to: destinationViewController, options: NSViewController.TransitionOptions.slideDown){
-            destinationViewController.removeFromParent()
             containerViewController.children.remove(at: 0)
+            containerViewController.view.addSubview(destinationViewController.view)
         }
         
     }

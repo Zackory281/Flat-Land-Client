@@ -18,6 +18,7 @@ class ConnectionViewController: NSViewController, ConnectionViewDelegate, Client
     override func viewDidLoad() {
         super.viewDidLoad()
         print("view loaded")
+        clientModelController.delegate = self
         connectionView.connectionViewDelegate = self
         clickGesture.delaysPrimaryMouseButtonEvents = false
     }
@@ -25,20 +26,25 @@ class ConnectionViewController: NSViewController, ConnectionViewDelegate, Client
     func connectToServer(address:String, port:Int32) {
         clientModelController.setupConnection(address: address, port: port)
         clientModelController.startConnection()
-        //clientModelController.sendInitPack(name: name, id: id, config: config)
+        clientModelController.sendConnectionCheckPack(hash: 1234)
         performSegue(withIdentifier: "toInitViewController", sender: nil)
+    }
+    
+    func receiveConnectionCheckPacket(packet: PlayerConnectionCheckPacket) {
+        print("received check hash of \(packet.hash)")
+        segue()
+    }
+    
+    func segue(){
+        DispatchQueue.main.sync {
+            performSegue(withIdentifier: "toInitViewController", sender: nil)
+        }
     }
     
     override func prepare(for segue: NSStoryboardSegue, sender: Any?) {
         if let initViewController = segue.destinationController as? InitViewController {
             initViewController.clientModelController = self.clientModelController
         }
-    }
-    
-    @objc dynamic var connectionData:ConnectionData = ConnectionData()
-    
-    func receiveConnectionCheckPacket(packet: PlayerConnectionCheckPacket) {
-        print("received check hash of \(packet.hash)")
     }
     
     deinit {

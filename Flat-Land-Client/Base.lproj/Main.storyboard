@@ -861,7 +861,7 @@
         <scene sceneID="deo-LI-qIF">
             <objects>
                 <viewController storyboardIdentifier="InitViewController" showSeguePresentationStyle="single" id="jB2-Ap-xzY" customClass="InitViewController" customModule="Flat_Land_Client" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" id="LGi-ZX-2ho">
+                    <view key="view" id="LGi-ZX-2ho" customClass="InitView" customModule="Flat_Land_Client" customModuleProvider="target">
                         <rect key="frame" x="0.0" y="0.0" width="480" height="270"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
@@ -879,23 +879,59 @@
                             </textField>
                             <textField verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="F9I-hv-IxU">
                                 <rect key="frame" x="158" y="124" width="164" height="22"/>
-                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" borderStyle="bezel" drawsBackground="YES" id="8EB-F8-c3z">
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" borderStyle="bezel" alignment="center" drawsBackground="YES" id="8EB-F8-c3z">
                                     <font key="font" usesAppearanceFont="YES"/>
                                     <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
                                     <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                 </textFieldCell>
+                                <connections>
+                                    <binding destination="ARe-TQ-Jwd" name="value" keyPath="selection.name" id="oN7-Fa-RLq">
+                                        <dictionary key="options">
+                                            <string key="NSNullPlaceholder">Zackori</string>
+                                            <bool key="NSValidatesImmediately" value="YES"/>
+                                        </dictionary>
+                                    </binding>
+                                </connections>
                             </textField>
+                            <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="cFr-kw-j4Q">
+                                <rect key="frame" x="207" y="81" width="66" height="32"/>
+                                <buttonCell key="cell" type="push" title="Join" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="a3z-4n-kP4">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="join:" target="jB2-Ap-xzY" id="MFb-Sd-7kZ"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <constraints>
                             <constraint firstItem="HaP-Yh-Dhf" firstAttribute="centerX" secondItem="LGi-ZX-2ho" secondAttribute="centerX" id="9Nu-ia-Mge"/>
                             <constraint firstItem="F9I-hv-IxU" firstAttribute="width" secondItem="HaP-Yh-Dhf" secondAttribute="width" id="H7O-MA-3xQ"/>
                             <constraint firstItem="F9I-hv-IxU" firstAttribute="top" secondItem="HaP-Yh-Dhf" secondAttribute="bottom" constant="30" id="MLV-1b-ogS"/>
                             <constraint firstItem="F9I-hv-IxU" firstAttribute="centerY" secondItem="LGi-ZX-2ho" secondAttribute="centerY" id="g1c-7w-ePX"/>
+                            <constraint firstItem="cFr-kw-j4Q" firstAttribute="top" secondItem="F9I-hv-IxU" secondAttribute="bottom" constant="15" id="n3C-ec-XtA"/>
                             <constraint firstItem="F9I-hv-IxU" firstAttribute="centerX" secondItem="LGi-ZX-2ho" secondAttribute="centerX" id="oko-v3-PK7"/>
+                            <constraint firstItem="cFr-kw-j4Q" firstAttribute="centerX" secondItem="LGi-ZX-2ho" secondAttribute="centerX" id="zpa-Sb-Wea"/>
                         </constraints>
+                        <gestureRecognizers>
+                            <clickGestureRecognizer delaysPrimaryMouseButtonEvents="YES" numberOfClicksRequired="1" id="VHK-sM-Wlp">
+                                <connections>
+                                    <action selector="clicked:" target="jB2-Ap-xzY" id="CWg-Xn-mNu"/>
+                                </connections>
+                            </clickGestureRecognizer>
+                        </gestureRecognizers>
                     </view>
                 </viewController>
                 <customObject id="lf7-3U-MeS" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+                <objectController id="ARe-TQ-Jwd">
+                    <connections>
+                        <binding destination="jB2-Ap-xzY" name="contentObject" keyPath="self.initData" id="TNq-5b-kW8">
+                            <dictionary key="options">
+                                <bool key="NSValidatesImmediately" value="YES"/>
+                            </dictionary>
+                        </binding>
+                    </connections>
+                </objectController>
             </objects>
             <point key="canvasLocation" x="1256" y="692"/>
         </scene>
