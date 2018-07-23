@@ -28,13 +28,23 @@ public class ClientModelController: ClientDelegate{
         client.startListeningData()
     }
     
-    func sendInitPack(name:String, id:Int8, config:Int8){
-        guard let client = self.client else { print("no client avaliable to send init pack");return}
+    func sendControlPack(direction:ControlDirection, angle:Float) -> Int{
+        guard let client = self.client else { print("no client avaliable to send init pack");return 0}
+        let controlPacketPtr = getControlPacket(angle, direction)
+        let data = Data(bytes: controlPacketPtr!, count: MemoryLayout<PlayerControlPacket>.size)
+        client.sendData(data, address: nil)
+        free(controlPacketPtr)
+        return data.hashValue
+    }
+    
+    func sendInitPack(name:String, id:Int8, config:Int8) -> Int{
+        guard let client = self.client else { print("no client avaliable to send init pack");return 0}
         let nameptr = UnsafeMutablePointer<Int8>(mutating: (NSString(string: name).utf8String!))
         let initPacketPtr = getInitPacket(nameptr, id, config)
-        client.sendData(Data(bytes: initPacketPtr!, count: MemoryLayout<PlayerInitPacket>.size), address: nil)
-        free(nameptr)
+        let data = Data(bytes: initPacketPtr!, count: MemoryLayout<PlayerInitPacket>.size)
+        client.sendData(data, address: nil)
         free(initPacketPtr)
+        return data.hashValue
     }
     
     func sendConnectionCheckPack(hash:Int32){

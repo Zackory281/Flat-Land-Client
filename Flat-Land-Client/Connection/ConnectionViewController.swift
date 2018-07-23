@@ -27,7 +27,6 @@ class ConnectionViewController: NSViewController, ConnectionViewDelegate, Client
         clientModelController.setupConnection(address: address, port: port)
         clientModelController.startConnection()
         clientModelController.sendConnectionCheckPack(hash: 1234)
-        performSegue(withIdentifier: "toInitViewController", sender: nil)
     }
     
     func receiveConnectionCheckPacket(packet: PlayerConnectionCheckPacket) {

@@ -913,14 +913,11 @@
                             <constraint firstItem="F9I-hv-IxU" firstAttribute="centerX" secondItem="LGi-ZX-2ho" secondAttribute="centerX" id="oko-v3-PK7"/>
                             <constraint firstItem="cFr-kw-j4Q" firstAttribute="centerX" secondItem="LGi-ZX-2ho" secondAttribute="centerX" id="zpa-Sb-Wea"/>
                         </constraints>
-                        <gestureRecognizers>
-                            <clickGestureRecognizer delaysPrimaryMouseButtonEvents="YES" numberOfClicksRequired="1" id="VHK-sM-Wlp">
-                                <connections>
-                                    <action selector="clicked:" target="jB2-Ap-xzY" id="CWg-Xn-mNu"/>
-                                </connections>
-                            </clickGestureRecognizer>
-                        </gestureRecognizers>
                     </view>
+                    <connections>
+                        <outlet property="name" destination="F9I-hv-IxU" id="Tpr-Kv-gzl"/>
+                        <segue destination="D7O-cp-tjU" kind="custom" identifier="segueToGame" customClass="Segue" customModule="Flat_Land_Client" customModuleProvider="target" id="FBv-gs-DaH"/>
+                    </connections>
                 </viewController>
                 <customObject id="lf7-3U-MeS" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
                 <objectController id="ARe-TQ-Jwd">
@@ -934,6 +931,68 @@
                 </objectController>
             </objects>
             <point key="canvasLocation" x="1256" y="692"/>
+        </scene>
+        <!--Game View Controller-->
+        <scene sceneID="EaQ-wa-i2Q">
+            <objects>
+                <viewController id="D7O-cp-tjU" customClass="GameViewController" customModule="Flat_Land_Client" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" id="ZwV-YM-3gp" customClass="GameView" customModule="Flat_Land_Client" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="0.0" width="480" height="270"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <subviews>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="IqD-ZU-XrL">
+                                <rect key="frame" x="172" y="121" width="137" height="29"/>
+                                <textFieldCell key="cell" lineBreakMode="clipping" alignment="center" title="Game Scene" id="NBl-G5-gcj">
+                                    <font key="font" metaFont="system" size="24"/>
+                                    <color key="textColor" name="windowFrameColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wvy-ke-YlO">
+                                <rect key="frame" x="329" y="180" width="56" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <buttonCell key="cell" type="push" title="up" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="GmB-6w-FdN">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="goUp:" target="D7O-cp-tjU" id="fBk-jq-JAe"/>
+                                </connections>
+                            </button>
+                            <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="WQH-wK-BYa">
+                                <rect key="frame" x="320" y="161" width="73" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <buttonCell key="cell" type="push" title="down" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="XDl-MD-VVn">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                            </button>
+                            <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dwu-Dw-dFP">
+                                <rect key="frame" x="269" y="172" width="60" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <buttonCell key="cell" type="push" title="left" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="TuR-Cy-uKw">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                            </button>
+                            <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="OXe-Lt-Mf5">
+                                <rect key="frame" x="385" y="172" width="69" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <buttonCell key="cell" type="push" title="right" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="Hfl-17-Fhr">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                            </button>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="IqD-ZU-XrL" firstAttribute="centerY" secondItem="ZwV-YM-3gp" secondAttribute="centerY" id="FXB-JJ-Aky"/>
+                            <constraint firstItem="IqD-ZU-XrL" firstAttribute="centerX" secondItem="ZwV-YM-3gp" secondAttribute="centerX" id="uhj-XV-fkd"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <customObject id="ZVr-Ql-x9e" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1894" y="692"/>
         </scene>
     </scenes>
 </document>

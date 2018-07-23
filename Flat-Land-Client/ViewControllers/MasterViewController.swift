@@ -15,6 +15,7 @@ class MasterViewController: NSViewController {
         let storyboard = NSStoryboard(name: "Main", bundle: Bundle.main)
         let connectionViewController = storyboard.instantiateController(withIdentifier: "ConnectionViewController") as! ConnectionViewController
         connectionViewController.clientModelController = ClientModelController()
+        connectionViewController.clientModelController.overlayData = self.overlayData
         self.addChild(connectionViewController)
         view.addSubview(connectionViewController.view)
         connectionViewController.view.frame = view.bounds
