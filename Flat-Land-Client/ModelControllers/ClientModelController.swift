@@ -28,16 +28,17 @@ public class ClientModelController: ClientDelegate{
         client.startListeningData()
     }
     
-    func sendControlPack(direction:ControlDirection, angle:Float) -> Int{
+    func sendControlPack(dx:Float, dy:Float, angle:Float) -> Int{
         guard let client = self.client else { print("no client avaliable to send init pack");return 0}
-        let controlPacketPtr = getControlPacket(angle, direction)
+        let controlPacketPtr = getControlPacket(dx, dy, angle)
+        print("\(dx) and \(dy)")
         let data = Data(bytes: controlPacketPtr!, count: MemoryLayout<PlayerControlPacket>.size)
         client.sendData(data, address: nil)
         free(controlPacketPtr)
         return data.hashValue
     }
     
-    func sendInitPack(name:String, id:Int8, config:Int8) -> Int{
+    func sendInitPack(name:String, id:UInt8, config:UInt8) -> Int{
         guard let client = self.client else { print("no client avaliable to send init pack");return 0}
         let nameptr = UnsafeMutablePointer<Int8>(mutating: (NSString(string: name).utf8String!))
         let initPacketPtr = getInitPacket(nameptr, id, config)
@@ -78,6 +79,9 @@ public class ClientModelController: ClientDelegate{
             case Check_opcode:
                 guard let receiveConnection = delegate.receiveConnectionCheckPacket else {print("connectioncheck desont eixt"); return;}
                 receiveConnection(ptr.pointee.connectionCheckPacket)
+            case Server_op_opcode:
+                guard let receiveConnection = delegate.receiveServerOpPacket else {print("receiveconnection desont eixt"); return;}
+                receiveConnection(ptr.pointee.serverOpPacket)
             default:
                 print("uncognized opcode of \(ptr.pointee.initPacket.opcode)")
             }
@@ -91,5 +95,5 @@ public class ClientModelController: ClientDelegate{
 
 @objc protocol ClientModelControllerDelegate{
     @objc optional func receiveConnectionCheckPacket(packet:PlayerConnectionCheckPacket)
-    //@objc optional func receiveUpdatePacket(packet:Playe)
+    @objc optional func receiveServerOpPacket(packet:ServerOpPacket)
 }

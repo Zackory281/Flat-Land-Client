@@ -46,14 +46,13 @@ class ClientUDP {
                         self.active = false
                         break
                     }else if message == "w" || message == "s"{
-                        var controlPacket = PlayerPacket(controlPacket: PlayerControlPacket(opcode: 1, direction: UP, angle: 3.12))
-                        try self.socket!.write(from: Data(bytes: &controlPacket, count: MemoryLayout<PlayerControlPacket>.size), to: address)
+                        //var controlPacket = PlayerPacket(controlPacket: PlayerControlPacket(opcode: 1, direction: UP, angle: 3.12))
+                        //try self.socket!.write(from: Data(bytes: &controlPacket, count: MemoryLayout<PlayerControlPacket>.size), to: address)
                     }else if message == "i"{
                         var initPacket = PlayerPacket(initPacket: PlayerInitPacket(opcode: 0,name: (34,65,75,66,77,88), id: 42, config: 21))
                         try self.socket!.write(from: Data(bytes: &initPacket, count: MemoryLayout<PlayerInitPacket>.size), to: address)
                     }else{
                         try self.socket!.write(from: message, to: address)
-                        print("sent \(message)")
                     }
                 }catch{
                     print("error sending datagram\(error)")
@@ -78,7 +77,6 @@ class ClientUDP {
         guard let address = address ?? self.serverAddress else { print("no address to write to"); return}
         do{
             try socket.write(from: data, to: address)
-            print("written data \(data) to add")
         }catch{
             print("failed to write data \(data) to address")
         }
@@ -90,7 +88,6 @@ class ClientUDP {
             repeat{
                 do{
                     let info = try self.socket.readDatagram(into: &readData)
-                    print(getHostDataString(info.address!))
                     self.decodeListenedData(data: readData)
                 }catch{
                     print("failed to read datagram: \(error)")
@@ -102,7 +99,6 @@ class ClientUDP {
     }
     
     func decodeListenedData(data:Data){
-        print("listened data \(data)")
         guard let delegate = self.delegate, let receiveData = delegate.receiveData else { print("delegate doesn't exist, not processing data"); return;}
         receiveData(data)
     }

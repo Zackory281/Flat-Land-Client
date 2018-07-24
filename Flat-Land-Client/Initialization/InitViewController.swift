@@ -39,9 +39,6 @@ class InitViewController: NSViewController, NSTextFieldDelegate, ClientModelCont
             dest.clientModelController = self.clientModelController
         }
     }
-    deinit {
-        print("InitViewController... GONE!")
-    }
 }
 
 class InitData:NSObject{

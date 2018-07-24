@@ -12,6 +12,7 @@
 		94D445B2D33555B0EB1768DF /* Pods_Flat_Land_ClientTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DAA0EB16CEEF97D8E56F1AE5 /* Pods_Flat_Land_ClientTests.framework */; };
 		F20000D92106700C0097A086 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F20000D82106700C0097A086 /* GameViewController.swift */; };
 		F20000DB210673060097A086 /* GameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F20000DA210673060097A086 /* GameView.swift */; };
+		F20000DF2106A8470097A086 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = F20000DE2106A8470097A086 /* Utils.swift */; };
 		F200FF59210548CE0097A086 /* InitView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F200FF58210548CE0097A086 /* InitView.swift */; };
 		F234A62721010CEA00516846 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F234A62621010CEA00516846 /* AppDelegate.swift */; };
 		F234A62921010CEA00516846 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F234A62821010CEA00516846 /* ViewController.swift */; };
@@ -60,6 +61,7 @@
 		DAA0EB16CEEF97D8E56F1AE5 /* Pods_Flat_Land_ClientTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Flat_Land_ClientTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F20000D82106700C0097A086 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
 		F20000DA210673060097A086 /* GameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameView.swift; sourceTree = "<group>"; };
+		F20000DE2106A8470097A086 /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
 		F200FF58210548CE0097A086 /* InitView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitView.swift; sourceTree = "<group>"; };
 		F234A62321010CEA00516846 /* Flat-Land-Client.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Flat-Land-Client.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F234A62621010CEA00516846 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -233,6 +235,7 @@
 			isa = PBXGroup;
 			children = (
 				F234A6582101115900516846 /* ClientUDP.swift */,
+				F20000DE2106A8470097A086 /* Utils.swift */,
 			);
 			path = "UDP Utils";
 			sourceTree = "<group>";
@@ -498,6 +501,7 @@
 				F2BDAA7E2102C5FE00587E2C /* MasterView.swift in Sources */,
 				F296C0102103CB660067052D /* Utils.c in Sources */,
 				F234A62921010CEA00516846 /* ViewController.swift in Sources */,
+				F20000DF2106A8470097A086 /* Utils.swift in Sources */,
 				F2BDAA742102816D00587E2C /* windows.swift in Sources */,
 				F234A669210117D200516846 /* ClientModelController.swift in Sources */,
 				F234A6592101115900516846 /* ClientUDP.swift in Sources */,

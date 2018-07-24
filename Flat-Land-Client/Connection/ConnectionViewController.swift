@@ -17,7 +17,6 @@ class ConnectionViewController: NSViewController, ConnectionViewDelegate, Client
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        print("view loaded")
         clientModelController.delegate = self
         connectionView.connectionViewDelegate = self
         clickGesture.delaysPrimaryMouseButtonEvents = false
